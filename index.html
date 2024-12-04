@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letsup Doc</title>
+    <link rel="icon" href="assets/icons/logo.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -21,50 +22,77 @@
 
 <body>
     <!-- Navbar with all elements inline -->
-    <nav class="navbar navbar-expand-lg navbar-custom header-gradient">
+    <nav class="navbar navbar-expand-lg navbar-custom header-gradient font-regular" style="padding: 15px 150px !important;">
 
         <!-- Navbar Items (email, phone, location, city, etc.) -->
-        <div class="d-flex align-items-center w-100 plan">
+        <div class="d-flex align-items-center justify-content-between w-100 plan">
 
             <!-- Email and Phone Section -->
-            <div class="d-flex align-items-center mr-4 nav-color">
-                <svg width="18" height="18" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.6664 12.0006H2.00047C0.897263 12.0006 -0.000244141 11.1031 -0.000244141 9.99988L0.00697327 2.00073C0.00697327 0.897461 0.901245 0 2.00047 0H12.6664C13.7696 0 14.6671 0.897461 14.6671 2.00073V9.99988C14.6671 11.1031 13.7696 12.0006 12.6664 12.0006ZM3.33357 2.76257C3.09758 2.76257 2.8842 2.88318 2.76279 3.08521C2.57289 3.39966 2.67464 3.81018 2.98956 4.00049L7.33566 6.61951L7.33932 6.61304L11.7979 3.90686C12.1126 3.71594 12.2139 3.30457 12.0238 2.98975C11.9021 2.78748 11.6887 2.66663 11.4529 2.66663C11.3323 2.66663 11.2135 2.69995 11.1094 2.76294L7.31407 5.04993L3.67717 2.8584C3.5732 2.79578 3.45438 2.76257 3.33357 2.76257Z" fill="currentColor"/>
+             <section class="d-flex align-items-center">
+                <div class="d-flex align-items-center mr-4 text-lightgreen">
+                    <svg width="18" height="18" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6664 12.0006H2.00047C0.897263 12.0006 -0.000244141 11.1031 -0.000244141 9.99988L0.00697327 2.00073C0.00697327 0.897461 0.901245 0 2.00047 0H12.6664C13.7696 0 14.6671 0.897461 14.6671 2.00073V9.99988C14.6671 11.1031 13.7696 12.0006 12.6664 12.0006ZM3.33357 2.76257C3.09758 2.76257 2.8842 2.88318 2.76279 3.08521C2.57289 3.39966 2.67464 3.81018 2.98956 4.00049L7.33566 6.61951L7.33932 6.61304L11.7979 3.90686C12.1126 3.71594 12.2139 3.30457 12.0238 2.98975C11.9021 2.78748 11.6887 2.66663 11.4529 2.66663C11.3323 2.66663 11.2135 2.69995 11.1094 2.76294L7.31407 5.04993L3.67717 2.8584C3.5732 2.79578 3.45438 2.76257 3.33357 2.76257Z" fill="currentColor"/>
+                    </svg>
+                        
+                    <span class="ml-2 text-light font-regular text-sm">info@letsupdoc.com</span>
+                </div>
+                <div class="d-flex align-items-center mr-4 text-lightgreen">
+                    <svg width="18" height="18" viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.74713 5.19348C3.70712 7.08008 5.25372 8.62 7.14044 9.58667L8.60712 8.12C8.78714 7.94006 9.05383 7.88 9.28714 7.96008C10.0338 8.20667 10.8404 8.33997 11.6671 8.33997C12.0337 8.33997 12.3337 8.64001 12.3337 9.00659V11.3334C12.3337 11.7001 12.0337 12 11.6671 12C5.40714 12 0.33374 6.92676 0.33374 0.666626C0.33374 0.300049 0.63382 0 1.00043 0H3.33383C3.70044 0 4.00043 0.300049 4.00043 0.666626C4.00043 1.5 4.13382 2.30005 4.38043 3.04663C4.45383 3.28003 4.40042 3.54004 4.21384 3.72668L2.74713 5.19348Z"/>
+                        </svg>
+                        
+                    <span class="ml-2 text-light text-sm">+92 340 4859817</span>
+                </div>
+             </section>
+            
+
+            <section class="d-flex align-items-center bg-white rounded-lg overflow-hidden">
+            <div class="d-flex align-items-center text-green ml-3 mr-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" fill="currentColor" viewBox="0 0 384 512">
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+            </div>
+            <!-- City -->
+            <div class="d-flex align-items-center ">
+                <input type="text" class="nav-inputs" placeholder="City" style="width: 51px; border: transparent !important;">
+            </div>
+            <!-- <span class="text-xl" style="opacity: 0.5;">|</span> -->
+             <span style="border-left: rgba(0, 0, 0,0.3) solid 2px; height: 30px;"></span>
+            <!-- Text input -->
+            <div class="d-flex align-items-center ml-3">
+                <input type="text" class="nav-inputs" placeholder="Search doctor by name, Specialties or Med" style="border: transparent !important;">
+            </div>
+            <!-- Filter & Search -->
+            <div class="d-flex align-items-center ml-4 bg-light px-3 py-2">
+                <!-- Filter -->
+                <svg class="cursor-pointer" width="22" height="22" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.8825 1.17773H0.5L7.45301 9.39967V15.0837L10.9295 16.822V9.39967L17.8825 1.17773Z" stroke="#105742" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="mx-3" style="border-left: rgba(0, 0, 0,0.3) solid 2px; height: 30px;"></span>
+                <!-- Search -->
+                <svg class="cursor-pointer" width="22" height="22" viewBox="0 0 15 15" fill="#105742" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.6447 13.7494L10.5233 9.58945C11.3298 8.57841 11.8161 7.29724 11.8161 5.90417C11.8161 2.64337 9.17268 0 5.90803 0C2.64337 0 0 2.64723 0 5.90803C0 9.16883 2.64337 11.8122 5.90803 11.8122C7.3204 11.8122 8.61314 11.3182 9.6319 10.4924L13.7262 14.6254C13.8497 14.7566 14.0195 14.8222 14.1854 14.8222C14.3437 14.8222 14.5019 14.7643 14.6215 14.6485C14.8762 14.4054 14.8839 14.0041 14.6447 13.7494ZM5.90803 10.5426C4.66931 10.5426 3.50391 10.0602 2.62793 9.18426C1.75196 8.30828 1.26959 7.14288 1.26959 5.90803C1.26959 4.66931 1.75196 3.50391 2.62793 2.63179C3.50391 1.75581 4.66931 1.27345 5.90803 1.27345C7.14674 1.27345 8.31214 1.75581 9.18812 2.63179C10.0641 3.50777 10.5465 4.67317 10.5465 5.90803C10.5465 7.14674 10.0641 8.31214 9.18812 9.18426C8.31214 10.0602 7.14674 10.5426 5.90803 10.5426Z"/>
                 </svg>
                     
-                <span class="ml-2">email@example.com</span>
+                    
             </div>
-            <div class="d-flex align-items-center mr-4">
-                <i class="fas fa-phone"></i>
-                <span class="ml-2">+123 456 7890</span>
-            </div>
+            </section>
 
-            <!-- Location, City Input, Pipe, Search Input, and Filter Icon -->
-            <div class="d-flex align-items-center mr-4">
-                <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="d-flex align-items-center mr-4">
-                <input type="text" class="form-control" placeholder="City" style="width: 120px;">
-            </div>
-            <div class="d-flex align-items-center mr-4">
-                <span class="divider">|</span>
-            </div>
-            <div class="d-flex align-items-center mr-4">
-                <input type="text" class="form-control" placeholder="Search" style="width: 150px;">
-            </div>
-            <div class="d-flex align-items-center mr-4">
-                <i class="fas fa-filter"></i>
-            </div>
+            
 
-            <!-- "I am a Doctor" Text -->
-            <div class="d-flex align-items-center mr-4 ml-auto">
-                <span>I am a Doctor</span>
-            </div>
-
-            <!-- Login/Signup Button -->
-            <div class="d-flex align-items-center">
-                <button class="login-btn">Login/Signup</button>
-            </div>
+            
+             <section class="d-flex align-items-center">
+                <!-- "I am a Doctor" Text -->
+                <div class="position-relative d-flex align-items-center mr-4 ml-auto" style="margin-top: -6px;">
+                    <span class="text-light text-sm" >I am a Doctor</span>
+                    <img src="./assets/icons/wave2.png" class="position-absolute" style="bottom: -16px; left: 1px;">
+                </div>
+    
+                <!-- Login/Signup Button -->
+                <div class="d-flex align-items-center">
+                    <button class="login-btn text-sm">Login/Signup</button>
+                </div>
+             </section>
+            
 
         </div>
         </div>

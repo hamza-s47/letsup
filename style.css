@@ -2,54 +2,130 @@
     --primary-color: #358C79;
     --sec-color: #2DD36F;
     --light-color: #E8FBF5;
-    --text-color: #0A2E36;
-    --dark-color: #105742;
+    --dark-color: #0A2E36;
+    --green-color: #105742;
     --gray-color: #505D68;
-    --review-color: #231F20;
-    --reviewDark-color: #2A8A86;
-    --icon-color: #80CBB5;
+    --black-color: #231F20;
+    --seagreen-color: #2A8A86;
+    --lightgreen-color: #80CBB5;
+    --dullgreen-color: #9EE8B9;
+}
+/* FONTS SOURCE */
+@font-face {
+    font-family: 'poppinsLight';
+    src: url('./assets/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: poppinsLight;
-    src: url('./assets/fonts/Poppins-Light.ttf');
+    font-family: 'poppinsRegular';
+    src: url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 400;
 }
 
-/* COLORS */
-.primary {
+@font-face {
+    font-family: 'poppinsMedium';
+    src: url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'poppinsSemibold';
+    src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+/* FONTS */
+.font-light {
+    font-family: 'poppinsLight', Arial, sans-serif !important;
+}
+
+.font-regular {
+    font-family: 'poppinsRegular', Arial, sans-serif !important;
+}
+
+.font-medium {
+    font-family: 'poppinsMedium', Arial, sans-serif !important;
+}
+
+.font-semibold {
+    font-family: 'poppinsSemibold', Arial, sans-serif !important;
+}
+
+/* FONT SIZES */
+.text-xs{
+    font-size: 12px !important;
+}
+.text-sm{
+    font-size: 14px !important;
+}
+.text-lg{
+    font-size: 18px !important;
+}
+.text-xl{
+    font-size: 22px !important;
+}
+.text-2xl{
+    font-size: 24px !important;
+}
+
+/* TEXT COLORS */
+.text-primary {
     color: var(--primary-color) !important;
 }
-.nav-color{
-    color: var(--icon-color) !important;
+.text-lightgreen{
+    color: var(--lightgreen-color) !important;
+}
+.text-light{
+    color: var(--light-color) !important;
+}
+.text-green{
+    color: var(--green-color) !important;
+}
+.text-gray{
+    color: var(--gray-color) !important;
+}
+
+/* BACKGROUND COLORS */
+.bg-dullgreen{
+    background-color: var(--dullgreen-color) !important;
+}
+.bg-light{
+    background-color: var(--light-color) !important;
 }
 
 /* GRADIENTS */
 .header-gradient {
-    background: linear-gradient(360deg, #154543, #2A8A86) !important;
+    background: linear-gradient(315deg, #154543, #2A8A86) !important;
 }
 
 .plan-gradient {
     background: linear-gradient(45deg, #002016, #49BB99) !important;
 }
 
+/* GENERAL CLASSES */
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
 /* NAVBAR */
-
-.divider {
-    margin: 0 10px;
-}
-
-.search-bar input {
-    width: 200px;
-}
-
 .login-btn {
-    font-weight: bold;
-    color: #007bff;
-    background-color: transparent;
-    border: none;
+    color: var(--light-color);
+    background-color: var(--seagreen-color);
+    border: 2px solid var(--light-color);
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-left: 40px;
+    transition: transform 0.1s ease;
 }
 
 .login-btn:hover {
-    background-color: #007bff;
-    color: #fff;
+    transform: scale(1.1);
+}
+.nav-inputs{
+    border: transparent !important;
+    opacity: 0.5;
+}
+.nav-inputs:focus{
+    border: transparent !important;
 }
