@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #358C79;
+    --sec-color: #2DD36F;
+    --light-color: #E8FBF5;
+    --text-color: #0A2E36;
+    --dark-color: #105742;
+    --gray-color: #505D68;
+    --review-color: #231F20;
+    --reviewDark-color: #2A8A86;
+  }
+
+  .primary{
+    color: var(--primary-color) !important;
+  }
+
+  .header-gradient {
+    background: linear-gradient(360deg, #154543, #2A8A86) !important;
+  }
+  .plan-gradient{
+    background: linear-gradient(360deg, #002016, #49BB99) !important;
+  }
