@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letsup Doc</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <!-- Navbar with all elements inline -->
+    <nav class="navbar navbar-expand-lg navbar-custom header-gradient">
+
+        <!-- Navbar Items (email, phone, location, city, etc.) -->
+        <div class="d-flex align-items-center w-100 plan">
+
+            <!-- Email and Phone Section -->
+            <div class="d-flex align-items-center mr-4 nav-color">
+                <svg width="18" height="18" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6664 12.0006H2.00047C0.897263 12.0006 -0.000244141 11.1031 -0.000244141 9.99988L0.00697327 2.00073C0.00697327 0.897461 0.901245 0 2.00047 0H12.6664C13.7696 0 14.6671 0.897461 14.6671 2.00073V9.99988C14.6671 11.1031 13.7696 12.0006 12.6664 12.0006ZM3.33357 2.76257C3.09758 2.76257 2.8842 2.88318 2.76279 3.08521C2.57289 3.39966 2.67464 3.81018 2.98956 4.00049L7.33566 6.61951L7.33932 6.61304L11.7979 3.90686C12.1126 3.71594 12.2139 3.30457 12.0238 2.98975C11.9021 2.78748 11.6887 2.66663 11.4529 2.66663C11.3323 2.66663 11.2135 2.69995 11.1094 2.76294L7.31407 5.04993L3.67717 2.8584C3.5732 2.79578 3.45438 2.76257 3.33357 2.76257Z" fill="currentColor"/>
+                </svg>
+                    
+                <span class="ml-2">email@example.com</span>
+            </div>
+            <div class="d-flex align-items-center mr-4">
+                <i class="fas fa-phone"></i>
+                <span class="ml-2">+123 456 7890</span>
+            </div>
+
+            <!-- Location, City Input, Pipe, Search Input, and Filter Icon -->
+            <div class="d-flex align-items-center mr-4">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="d-flex align-items-center mr-4">
+                <input type="text" class="form-control" placeholder="City" style="width: 120px;">
+            </div>
+            <div class="d-flex align-items-center mr-4">
+                <span class="divider">|</span>
+            </div>
+            <div class="d-flex align-items-center mr-4">
+                <input type="text" class="form-control" placeholder="Search" style="width: 150px;">
+            </div>
+            <div class="d-flex align-items-center mr-4">
+                <i class="fas fa-filter"></i>
+            </div>
+
+            <!-- "I am a Doctor" Text -->
+            <div class="d-flex align-items-center mr-4 ml-auto">
+                <span>I am a Doctor</span>
+            </div>
+
+            <!-- Login/Signup Button -->
+            <div class="d-flex align-items-center">
+                <button class="login-btn">Login/Signup</button>
+            </div>
+
+        </div>
+        </div>
+    </nav>
 
     <script type="text/javascript" src="./script.js"></script>
 </body>
+
 </html>

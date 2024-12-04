@@ -7,15 +7,49 @@
     --gray-color: #505D68;
     --review-color: #231F20;
     --reviewDark-color: #2A8A86;
-  }
+    --icon-color: #80CBB5;
+}
 
-  .primary{
+@font-face {
+    font-family: poppinsLight;
+    src: url('./assets/fonts/Poppins-Light.ttf');
+}
+
+/* COLORS */
+.primary {
     color: var(--primary-color) !important;
-  }
+}
+.nav-color{
+    color: var(--icon-color) !important;
+}
 
-  .header-gradient {
+/* GRADIENTS */
+.header-gradient {
     background: linear-gradient(360deg, #154543, #2A8A86) !important;
-  }
-  .plan-gradient{
-    background: linear-gradient(360deg, #002016, #49BB99) !important;
-  }
+}
+
+.plan-gradient {
+    background: linear-gradient(45deg, #002016, #49BB99) !important;
+}
+
+/* NAVBAR */
+
+.divider {
+    margin: 0 10px;
+}
+
+.search-bar input {
+    width: 200px;
+}
+
+.login-btn {
+    font-weight: bold;
+    color: #007bff;
+    background-color: transparent;
+    border: none;
+}
+
+.login-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
