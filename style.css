@@ -171,6 +171,12 @@
     .are2{
         width: 47% !important;
     }
+    .doc-list{
+        width: 30% !important;
+    }
+    .footer-list{
+        width: 20% !important;
+    }
 }
 @media (min-width: 1280px) {
     .header-main{
