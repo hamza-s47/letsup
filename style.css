@@ -35,6 +35,12 @@
     font-weight: 600;
 }
 
+@font-face {
+    font-family: 'poppinsBold';
+    src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
 /* FONTS */
 .font-light {
     font-family: 'poppinsLight', Arial, sans-serif !important;
@@ -49,6 +55,9 @@
 }
 
 .font-semibold {
+    font-family: 'poppinsSemibold', Arial, sans-serif !important;
+}
+.font-bold {
     font-family: 'poppinsSemibold', Arial, sans-serif !important;
 }
 
@@ -70,7 +79,7 @@
 }
 
 /* TEXT COLORS */
-.text-primary {
+.text-primary2 {
     color: var(--primary-color) !important;
 }
 .text-lightgreen{
@@ -124,6 +133,9 @@
     background: linear-gradient(45deg, #002016, #49BB99) !important;
 }
 
+.hero-gradient {
+    background: linear-gradient(90deg, #D7F7ED, #EBFBF6) !important;
+}
 /* GENERAL CLASSES */
 .cursor-pointer{
     cursor: pointer !important;

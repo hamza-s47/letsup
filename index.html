@@ -137,7 +137,74 @@
     </header>
 
     <!-- HERO SECTION -->
-    <main>Hero section!</main>
+    <main class="w-100" style="height: 80vh; ">
+        <div id="hero-main" class="w-100 h-100 d-flex justify-content-between" style="margin-top: 0.5%;">
+            <!-- Doctor -->
+            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;"
+                onclick="heroAnimaion('doc')">
+                <!-- Show -->
+                <div class="w-50" style="margin: auto;">
+                    <img src="./assets/images/hero-doc.png" alt="" class="w-100">
+                </div>
+
+                <!-- Hide -->
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center" style="display: none; padding-left: 150px;">
+                    <div class="w-50">
+                        <h2 class="font-light text-uppercase text-dark" style="font-size: 52px;">
+                            Consult top <br><span class="font-bold">doctors <span
+                                    class="text-primary2 text-capitalize">100 Pkr</span></span>
+                        </h2>
+                        <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Get 24/7 consults with top
+                            doctors. Book fast & find great prices for quality care</p>
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/icons/consult.png" alt="" style="width: 13rem;"> 
+                            <a class="cursor-pointer d-flex align-items-center text-medium ml-4"
+                                style="text-decoration: none !important;">
+                                <span class="text-green font-light text-sm">Your first query consult is free</span>
+                                <div class="ml-3 text-sec" style="width: 30px; ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+                                        <path
+                                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="font-light text-green" style="opacity: 0.4; margin-top: 60px;">
+                            Verified By<br><span class="text-xl">PMC (Pakistan Medical Commision)</span>
+                        </p>
+                    </div>
+                    <img src="./assets/images/hero-doc.png" alt="" class="position-absolute" style="bottom: 0; right: 30px; width: 25%;">
+                </div>
+            </section>
+            <!-- Location -->
+            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('location')">
+                <!-- Show -->
+                <div class="w-50" style="margin: auto;">
+                    <img src="./assets/images/hero-location.png" alt="" class="w-100">
+                </div>
+                <!-- Hide -->
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center" style="display: none; padding-left: 150px;">Location UI in progress!</div>
+            </section>
+            <!-- Medicine -->
+            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('med')">
+                <!-- Show -->
+                <div class="" style="margin: auto; width: 35%;">
+                    <img src="./assets/images/hero-med.png" alt="" class="w-100">
+                </div>
+                <!-- Hide -->
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center" style="display: none; padding-left: 150px;">Med UI in progress!</div>
+            </section>
+            <!-- Bot -->
+            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('bot')">
+                <!-- Show -->
+                <div class="w-50" style="margin: auto;">
+                    <img src="./assets/images/hero-bot.png" alt="" class="w-100">
+                </div>
+                <!-- Hide -->
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center" style="display: none; padding-left: 150px;">Bot UI in progress!</div>
+            </section>
+        </div>
+    </main>
 
     <!-- SEARCH SECTION -->
     <main>Most search domain section!</main>
@@ -426,8 +493,13 @@
     <main class="w-100 bg-dark" style="padding: 140px;">
         <div class="d-flex justify-content-between flex-wrap">
             <div class="footer-list" style="width: 90%;"">
-                <img src="./assets/icons/logo.png" alt="" style="width: 50%;">
-                <p class="text-light font-regular mt-4" style="line-height: 2rem;">LetsUpDoc is the product of Hassbuna company. Hassbuna has a plan of publishing a very niche products in the market with the Only reason of helping and make the life of people easy and simple in the future inshALLAH. The Aim of LetsUpDoc is to enable patients and doctors to meet and connect each other in a very effective and swift way. Now matter whatever the geographical location of the patient and doctors are they can connect in no time with No or minimal fees.</p>
+                <img src=" ./assets/icons/logo.png" alt="" style="width: 50%;">
+                <p class="text-light font-regular mt-4" style="line-height: 2rem;">LetsUpDoc is the product of Hassbuna
+                    company. Hassbuna has a plan of publishing a very niche products in the market with the Only reason
+                    of helping and make the life of people easy and simple in the future inshALLAH. The Aim of LetsUpDoc
+                    is to enable patients and doctors to meet and connect each other in a very effective and swift way.
+                    Now matter whatever the geographical location of the patient and doctors are they can connect in no
+                    time with No or minimal fees.</p>
             </div>
             <!-- Quick Links -->
             <div class="footer-list font-light d-flex flex-column" style="width: 90%;">
@@ -474,13 +546,13 @@
                     <a class="text-light text-regular text-xl" style="width: fit-content;">Download our app</a>
                     <img src="./assets/images/qrcode.png" alt="" style="width: 20%; margin: 30px 0 20px 50px;">
                     <img src="./assets/images/store.png" alt="" style="width: 60%; margin-left: -16px;">
-                    
+
                     <div class="d-flex flex-column justify-content-center" style="width: fit-content;">
-                        
+
                     </div>
-                    
+
                 </div>
-        </div>
+            </div>
     </main>
 
     <!-- CITIES LIST SECTION -->
