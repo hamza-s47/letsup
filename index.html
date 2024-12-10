@@ -129,10 +129,10 @@
     </header>
 
     <!-- HERO SECTION -->
-    <main class="w-100" style="height: 80vh; ">
+    <section class="w-100" style="height: 80vh; ">
         <div id="hero-main" class="w-100 h-100 d-flex justify-content-between" style="margin-top: 0.5%;">
             <!-- Doctor -->
-            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;"
+            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.2s ease-in-out;"
                 onclick="heroAnimaion('doc')">
                 <!-- Show -->
                 <div class="w-50" style="margin: auto;">
@@ -141,6 +141,11 @@
 
                 <!-- Hide -->
                 <div class="position-relative w-100 h-100 hero-gradient align-items-center" style="display: none; padding-left: 150px;">
+                    <!-- close Btn -->
+                    <!-- <a class="position-absolute cursor-pointer" style="width: 50px; top: 50px; left: 50px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </a> -->
                     <div class="w-50">
                         <h2 class="hero-heading font-light text-uppercase text-dark">
                             Consult top <br><span class="font-bold">doctors <span
@@ -165,7 +170,14 @@
                             Verified By<br><span class="text-xl">PMC (Pakistan Medical Commision)</span>
                         </p>
                     </div>
-                    <img src="./assets/images/hero-doc.png" alt="" class="position-absolute" style="bottom: 0; right: 30px; width: 25%;">
+                    
+                    <div class="position-absolute" style="bottom: 0; right: 30px; width: 25%;">
+                        <div class="w-100 position-relative">
+                            <img src="./assets/icons/service.png" alt="" class="position-absolute" style="top: -30px; left: -60px; width: 50%;">
+                            <img src="./assets/images/hero-doc.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
             <!-- Location -->
@@ -262,7 +274,7 @@
                 </div>
             </section>
         </div>
-    </main>
+    </section>
 
     <!-- SEARCH SECTION -->
     <section class="w-100 text-light" style="padding: 100px;">
@@ -317,7 +329,7 @@
     </section>
 
     <!-- CASHBACK SECTION -->
-    <main class="w-100">
+    <section class="w-100">
         <div class="position-relative w-100 bg-dark d-flex align-items-center justify-content-center"
             style="padding: 50px 0 120px 0;">
             <div class="d-flex flex-column align-items-center justify-content-center">
@@ -337,7 +349,7 @@
         <div class="w-100 text-light font-medium bg-primary2 text-center" style="padding: 36px 0; font-size: 32px;">
             <span>Cash on Delivery | Managed by Certified Pharmacists | Great Savings</span>
         </div>
-    </main>
+    </section>
 
 
     <!-- CONSULT SECTION -->
@@ -435,7 +447,7 @@
     </section>
 
     <!-- SAVE SECTION -->
-    <main class="w-100 bg-dark text-light d-flex align-items-center justify-content-center" style="padding: 70px 0;">
+    <section class="w-100 bg-dark text-light d-flex align-items-center justify-content-center" style="padding: 70px 0;">
         <div class="d-flex flex-column align-items-center justify-content-center">
             <h2 class="text-center font-medium" style="font-size: 54px;">Save 10% Off on Every Next Appointment</h2>
             <p class="font-light  text-center " style="font-size: 26px; margin: 40px 0; ">Upgrade to our Gold Membership
@@ -456,7 +468,7 @@
                 </a>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- HOW IT WORKS SECTION -->
     <section class="w-100 text-dark" style="padding: 100px;">
@@ -591,21 +603,27 @@
     </section>
 
     <!-- TAKE CONSULTATION SECTION -->
-    <main class="w-100 bg-dark position-relative" style="padding: 100px 100px; overflow-x: hidden;">
+    <section class="w-100 bg-dark position-relative" style="padding: 100px 100px; overflow-x: hidden;">
         <div class="take-consult">
             <h2 class="font-regular text-light" style="font-size: 52px;">Take a consultation<br><span class="font-medium text-sec">From Anywhere!</span></h2>
             <p class="font-light text-light text-xl mt-4">Whether you reside in Karachi, London, New York, Dubai, Istanbul, or Islamabad, our system focuses on adjusting to your local time, ensuring proper appointments, sending relevant notifications, and updates exactly when you require them.<br><br>We value the significance of timely communication and we strive to keep you engaged and informed.</p>
         </div>
         <img src="./assets/images/take-consult.png" alt="" class="position-absolute" style="right: 0; top: -40rem; width: 58%;">
-    </main>
+    </section>
 
     <!-- OUR PLANS SECTION -->
-    <main class="w-100">
-        Plan section...
-    </main>
+    <section w-100 text-dark" style="padding: 100px;">
+        <div class="" style="width: 70%; margin: 0 auto;">
+            <h2 style="font-size: 42px;" class="font-bold text-dark text-center">Our <span class="text-primary2">Plans</span></h2>
+            <p class="font-light text-xl text-dark text-center mb-4">LetsUpDoc is the most complete primary care service that offers you a long-term relationship virtually and affordably.</p>
+            <div class="w-100 d-flex justify-content-between">
+                <div class="" style="width: 30%; border-radius: 10px; padding-bottom: 20px; box-shadow: 5px 5px 5px gray;"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- ARE YOU DOC SECTION -->
-    <main class="are-main bg-dark text-light " style="padding: 140px;">
+    <section class="are-main bg-dark text-light " style="padding: 140px;">
         <div class="are1" style="width: 90%; margin: 0 auto;">
             <h3 class="font-medium text-uppercase" style="font-size: 34px;">Are you a doctor?</h3>
             <h2 class="font-semibold text-sec text-uppercase" style="font-size: 45px;">Well, Hi doc.<br>Your patients
@@ -663,20 +681,20 @@
             </div>
 
         </div>
-    </main>
+    </section>
 
     <!-- DOWNLOAD APP SECTION -->
-    <main class="w-100 d-flex align-items-center justify-content-center" style="padding: 30px 0;">
+    <section class="w-100 d-flex align-items-center justify-content-center" style="padding: 30px 0;">
         <div class="text-green d-flex flex-column align-items-center justify-content-center">
             <h2 class="text-center font-semibold" style="font-size: 54px;">Download the App</h2>
             <p class="font-light w-75 text-center" style="font-size: 26px;">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.</p>
             <img src="./assets/images/store.png" alt="" style="width: 30%;">
         </div>
-    </main>
+    </section>
 
     <!-- CONTACT US SECTION -->
-    <main class="w-100 bg-dark text-light d-flex align-items-center justify-content-center" style="padding: 70px 0;">
+    <section class="w-100 bg-dark text-light d-flex align-items-center justify-content-center" style="padding: 70px 0;">
         <div class="d-flex flex-column align-items-center justify-content-center">
             <h2 class="text-center font-medium mb-4" style="font-size: 54px;">Contact us</h2>
             <p class="font-medium text-2xl text-center">We'd love to hear from you</p>
@@ -759,10 +777,10 @@
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- DOC LISTS SECTION -->
-    <main class="w-100 " style="padding: 140px;">
+    <section class="w-100 " style="padding: 140px;">
         <div class="d-flex justify-content-between flex-wrap">
             <!-- Karachi -->
             <div class="doc-list font-light d-flex flex-column" style="width: 90%;">
@@ -819,10 +837,10 @@
                 <a class="cursor-pointer mb-3 text-green">More Specialities in Faisalabad</a>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- FOOTER SECTION -->
-    <main class="w-100 bg-dark" style="padding: 140px;">
+    <section class="w-100 bg-dark" style="padding: 140px;">
         <div class="d-flex justify-content-between flex-wrap">
             <div class="footer-list" style="width: 90%;"">
                 <img src=" ./assets/icons/logo.png" alt="" style="width: 50%;">
@@ -885,10 +903,10 @@
 
                 </div>
             </div>
-    </main>
+    </section>
 
     <!-- CITIES LIST SECTION -->
-    <footer
+    <section
         class="footer-last w-100 bg-primary2 font-medium text-light d-flex align-items-center justify-content-between">
         <span class="mr-2">Major Cities</span>
         <span>Karachi</span>
@@ -900,10 +918,10 @@
         <span>Multan</span>
         <span>Islamabad</span>
         </div>
-    </footer>
+    </section>
 
     <!-- INFO SECTION -->
-    <main class="d-flex align-items-center justify-content-between" style="padding: 40px 90px;">
+    <section class="d-flex align-items-center justify-content-between" style="padding: 40px 90px;">
         <!-- PMC -->
         <div class="" style="width: 30%;">
             <div style="width: fit-content; margin: 0 auto;">
@@ -928,7 +946,7 @@
             <p class="text-center mt-4 text-xl font-medium text-green">Secure Online Payment & Checkout<br><br>Using SSL
                 Certificate</p>
         </div>
-    </main>
+    </section>
 
     <!-- LAST FOOTER SECTION -->
     <footer class="footer-last w-100 bg-dark font-medium text-light d-flex align-items-center justify-content-between">
