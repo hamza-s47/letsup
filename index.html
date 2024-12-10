@@ -7,6 +7,8 @@
     <title>Letsup Doc</title>
     <link rel="icon" href="assets/icons/logo.png">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -22,7 +24,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="header-main navbar navbar-expand-lg navbar-custom header-gradient font-regular">
+    <nav class="header-main header-gradient font-regular">
         <div class="d-flex align-items-center justify-content-between w-100">
 
             <!-- EMAIL & PHONE SECTION -->
@@ -34,7 +36,7 @@
                             fill="currentColor" />
                     </svg>
 
-                    <span class="ml-2 text-light font-regular text-sm">info@letsupdoc.com</span>
+                    <span class="ml-2 text-light font-regular">info@letsupdoc.com</span>
                 </div>
                 <div class="d-flex align-items-center mr-4 text-lightgreen">
                     <svg width="18" height="18" viewBox="0 0 13 12" fill="currentColor"
@@ -43,12 +45,12 @@
                             d="M2.74713 5.19348C3.70712 7.08008 5.25372 8.62 7.14044 9.58667L8.60712 8.12C8.78714 7.94006 9.05383 7.88 9.28714 7.96008C10.0338 8.20667 10.8404 8.33997 11.6671 8.33997C12.0337 8.33997 12.3337 8.64001 12.3337 9.00659V11.3334C12.3337 11.7001 12.0337 12 11.6671 12C5.40714 12 0.33374 6.92676 0.33374 0.666626C0.33374 0.300049 0.63382 0 1.00043 0H3.33383C3.70044 0 4.00043 0.300049 4.00043 0.666626C4.00043 1.5 4.13382 2.30005 4.38043 3.04663C4.45383 3.28003 4.40042 3.54004 4.21384 3.72668L2.74713 5.19348Z" />
                     </svg>
 
-                    <span class="ml-2 text-light text-sm">+92 340 4859817</span>
+                    <span class="ml-2 text-light">+92 340 4859817</span>
                 </div>
             </section>
 
             <!-- SEARCH SECTION -->
-            <section class="d-flex align-items-center bg-white rounded-lg overflow-hidden text-sm">
+            <section class="d-flex align-items-center bg-white rounded-lg overflow-hidden">
                 <div class="d-flex align-items-center text-green ml-3 mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" fill="currentColor"
                         viewBox="0 0 384 512">
@@ -58,14 +60,14 @@
                 </div>
                 <!-- City -->
                 <div class="d-flex align-items-center ">
-                    <input type="text" class="nav-inputs" placeholder="City"
-                        style="width: 51px; border: transparent !important;">
+                    <input type="text" class="" placeholder="City"
+                        style="width: 51px; border: transparent !important; outline: none;">
                 </div>
                 <span style="border-left: rgba(0, 0, 0,0.3) solid 2px; height: 30px;"></span>
                 <!-- Text input -->
                 <div class="d-flex align-items-center ml-3">
-                    <input type="text" class="nav-inputs" placeholder="Search doctor by name, Specialties or Med"
-                        style="border: transparent !important;">
+                    <input type="text" class="" placeholder="Search doctor by name, Specialties or Med"
+                        style="border: transparent !important; outline: none;">
                 </div>
                 <!-- Filter & Search -->
                 <div class="d-flex align-items-center ml-4 bg-whitegreen px-3 py-2">
@@ -90,13 +92,13 @@
             <!-- BUTTON SECTION -->
             <section class="d-flex align-items-center">
                 <!-- "I am a Doctor" Text -->
-                <div class="position-relative d-flex align-items-center mr-4 ml-auto" style="margin-top: -6px;">
-                    <span class="text-light text-sm">I am a Doctor</span>
+                <div class="position-relative align-items-center mr-4 ml-auto im-doc" style="margin-top: -6px;">
+                    <span class="text-light" style="font-size: 14px;">I am a Doctor</span>
                     <img src="./assets/icons/wave2.png" class="position-absolute" style="bottom: -16px; left: 1px;">
                 </div>
 
                 <!-- Login/Signup Button -->
-                <button type="button" class="login-btn text-sm">Login/Signup</button>
+                <button type="button" class="login-btn">Login/Signup</button>
             </section>
         </div>
         </div>
@@ -105,7 +107,7 @@
     <!-- HEADER -->
     <header class="header-main bg-whitegreen w-100" style="color: #105742 !important;">
         <div class="d-flex align-items-center justify-content-between">
-            <img src="./assets/icons/logo.png" alt="logo" style="width: 10rem;">
+            <img src="./assets/icons/logo.png" alt="logo" class="header-img">
 
             <div class="d-flex align-items-center font-medium">
 
@@ -150,14 +152,14 @@
                 <!-- Hide -->
                 <div class="position-relative w-100 h-100 hero-gradient align-items-center" style="display: none; padding-left: 150px;">
                     <div class="w-50">
-                        <h2 class="font-light text-uppercase text-dark" style="font-size: 52px;">
+                        <h2 class="hero-heading font-light text-uppercase text-dark">
                             Consult top <br><span class="font-bold">doctors <span
                                     class="text-primary2 text-capitalize">100 Pkr</span></span>
                         </h2>
-                        <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Get 24/7 consults with top
+                        <p class="hero-desc font-light text-2xl text-green" style="opacity: 0.5;">Get 24/7 consults with top
                             doctors. Book fast & find great prices for quality care</p>
                         <div class="d-flex align-items-center">
-                            <img src="./assets/icons/consult.png" alt="" style="width: 13rem;"> 
+                            <img src="./assets/icons/consult.png" alt="" style="width: 12rem;"> 
                             <a class="cursor-pointer d-flex align-items-center text-medium ml-4"
                                 style="text-decoration: none !important;">
                                 <span class="text-green font-light text-sm">Your first query consult is free</span>
@@ -185,10 +187,10 @@
                 <!-- Hide -->
                 <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between" style="display: none; padding: 0 100px 0 100px;">
                     <div class="w-50">
-                        <h2 class="font-light text-uppercase text-dark" style="font-size: 52px;">
+                        <h2 class="hero-heading font-light text-uppercase text-dark">
                             Discover <span class="font-bold text-primary2">Top<br><span class="font-bold text-dark">HOSPITALS <span class="font-light">& </span>EXPERT<br></span>Physician.
                         </h2>
-                        <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Explore hospitals, find dedicated doctors. Exceptional care starts here.</p>
+                        <p class="hero-desc font-light text-2xl text-green" style="opacity: 0.5;">Explore hospitals, find dedicated doctors. Exceptional care starts here.</p>
                         <p class="font-regular text-2xl text-green" style="opacity: 0.7;">Find Hospitals by Cities</p>
                         <section class="d-flex align-items-center bg-white rounded-lg overflow-hidden text-sm" style="border: 1px #C8D4DC solid; padding: 7px 0; margin: 15px 0 15px 0;">
                             <div class="d-flex align-items-center text-green ml-3 mr-2">
@@ -231,7 +233,7 @@
                 <!-- Hide -->
                 <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between" style="display: none; padding: 0 100px 0 100px;">
                     <div class="w-50">
-                        <h2 class="font-light text-uppercase text-dark" style="font-size: 52px;">
+                        <h2 class="hero-heading font-light text-uppercase text-dark">
                             Your <span class="font-bold text-primary2">Health </span> First<br><span class="font-bold text-primary2">Easy </span><span class="font-bold">Pharmacy</span><br>Solutions
                         </h2>
                         <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Save Big on Meds & Stay Healthy, All in One Place!</p>
@@ -254,7 +256,7 @@
                 <!-- Hide -->
                 <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between" style="display: none; padding: 0 100px 0 100px;">
                     <div class="w-50">
-                        <h2 class="font-light text-uppercase text-dark" style="font-size: 52px;">
+                        <h2 class="hero-heading font-light text-uppercase text-dark">
                             Instant <span class="font-bold text-primary2">Symptom<br> Assistance  </span> With<br>AI Chat bot
                         </h2>
                         <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Get Quick Answers to Your Health Concerns with
@@ -333,10 +335,31 @@
     <main>Our patient section!</main>
 
     <!-- TAKE CONSULTATION SECTION -->
-    <main>Take consultation section!</main>
+    <main class="w-100 bg-dark position-relative" style="padding: 100px 100px; overflow-x: hidden;">
+        <div class="take-consult">
+            <h2 class="font-regular text-light" style="font-size: 52px;">Take a consultation<br><span class="font-medium text-sec">From Anywhere!</span></h2>
+            <p class="font-light text-light text-xl mt-4">Whether you reside in Karachi, London, New York, Dubai, Istanbul, or Islamabad, our system focuses on adjusting to your local time, ensuring proper appointments, sending relevant notifications, and updates exactly when you require them.<br><br>We value the significance of timely communication and we strive to keep you engaged and informed.</p>
+        </div>
+        <img src="./assets/images/take-consult.png" alt="" class="position-absolute" style="right: 0; top: -40rem; width: 58%;">
+    </main>
 
     <!-- OUR PLANS SECTION -->
-    <main>Our plans section!</main>
+    <main class="w-100">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div>
+        </div>
+    </main>
 
     <!-- ARE YOU DOC SECTION -->
     <main class="are-main bg-dark text-light " style="padding: 140px;">
@@ -352,7 +375,7 @@
 
         <div class="are2" style="width: 90%; margin: 20px auto 0 auto;">
             <div class="font-light text-xl" style="width: fit-content; margin: 0 0 0 auto;">
-                <p style="margin-left: 45px;">Why LetsUpDoc?</p>
+                <p style="margin-left: 40px;">Why LetsUpDoc?</p>
                 <!-- 1 -->
                 <div class="d-flex align-items-center mb-3">
                     <div style="width: 22px; margin-right: 20px;">
@@ -702,7 +725,10 @@
             </div>
         </div>
     </footer>
+    
 
+    <script src="./assets/files/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
 </body>
 

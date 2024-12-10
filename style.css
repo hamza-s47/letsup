@@ -10,6 +10,25 @@
     --lightgreen-color: #80CBB5;
     --dullgreen-color: #9EE8B9;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--sec-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+  }
 /* FONTS SOURCE */
 @font-face {
     font-family: 'poppinsLight';
@@ -155,18 +174,34 @@
 .login-btn:hover {
     transform: scale(1.1);
 }
-.nav-inputs{
+/* .nav-inputs{
     border: transparent !important;
     opacity: 0.5;
 }
 .nav-inputs:focus{
     border: transparent !important;
-}
+} */
 
 @media (min-width: 1024px) {
     .header-main{
-        padding: 15px 100px !important;
+        padding: 15px 30px !important;
         font-size: 12px;
+        font-size: 12px !important;
+    }
+    .im-doc{
+        display: none !important;
+    }
+    .header-img{
+        width: 7rem;
+    }
+    .hero-heading{
+        font-size: 42px;
+    }
+    .hero-desc{
+        margin: 15px 0;
+    }
+    .take-consult{
+        width: 40% !important;
     }
     .footer-last{
         padding: 15px 100px !important;
@@ -192,8 +227,21 @@
 }
 @media (min-width: 1280px) {
     .header-main{
-        padding: 15px 100px !important;
+        padding: 15px 80px !important;
         font-size: 14px !important;
+        font-size: 12px !important;
+    }
+    .im-doc{
+        display: flex !important;
+    }
+    .header-img{
+        width: 8rem;
+    }
+    .hero-heading{
+        font-size: 52px;
+    }
+    .hero-desc{
+        margin: 35px 0;
     }
     .footer-last{
         padding: 15px 100px !important;
@@ -204,6 +252,10 @@
     .header-main{
         padding: 15px 150px !important;
         font-size: 16px !important;
+        font-size: 14px !important;
+    }
+    .header-img{
+        width: 10rem !important;
     }
     .footer-last{
         padding: 15px 150px !important;
