@@ -181,6 +181,12 @@
 .nav-inputs:focus{
     border: transparent !important;
 } */
+.lg-none{
+    display: flex !important;
+}
+.lg-block{
+    display: none !important;
+}
 
 @media (min-width: 1024px) {
     .header-main{
@@ -200,9 +206,13 @@
     .hero-desc{
         margin: 15px 0;
     }
-    .take-consult{
-        width: 40% !important;
+    .lg-block{
+        display: block !important;
     }
+    .lg-none{
+        display: none !important;
+    }
+    
     .footer-last{
         padding: 15px 100px !important;
         font-size: 16px !important;
@@ -243,6 +253,12 @@
     .hero-desc{
         margin: 35px 0;
     }
+    .take-consult{
+        width: 40% !important;
+    }
+    .plan-width {
+        width: 70% !important;
+    }
     .footer-last{
         padding: 15px 100px !important;
         font-size: 18px !important;
@@ -256,6 +272,16 @@
     }
     .header-img{
         width: 10rem !important;
+    }
+    .take-postion{
+        top: -110% !important;
+    }
+    .take-globe{
+        top: 30% !important;
+        left: 15% !important;
+    }
+    .how-width{
+        width: 40% !important;
     }
     .footer-last{
         padding: 15px 150px !important;
