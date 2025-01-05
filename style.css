@@ -189,8 +189,21 @@
     display: flex !important;
 }
 
+/* SEARCH SECTION */
+.search-sec > h2{
+    font-size: 28px;
+}
+
 /* INFO SECTION */
 .info-list{
+    width: 100%;
+}
+
+/* CONSULT */
+.consult-content{
+    width: 100%;
+}
+.consult-content{
     width: 100%;
 }
 

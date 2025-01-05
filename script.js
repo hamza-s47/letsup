@@ -177,7 +177,124 @@ function menuShow(){
         close.classList.remove('d-none');
         open.classList.add('d-none');
     }
+}
+function heroMobAnimaion(condition){
+    const hero = document.getElementById('hero-mob');
 
+    const doc = hero.children[0];
+    const location = hero.children[1];
+    const med = hero.children[2];
+    const bot = hero.children[3];
+
+
+    if(condition === 'doc'){
+        doc.style.height = '49.2%';
+        bot.style.height = '0';
+        location.style.height = '24.6%';
+        med.style.height = '24.6%';
     
+        // For Doc
+        doc.children[0].style.display = 'none';
+        doc.children[1].style.display = 'flex';
+
+        // For Location
+        location.children[0].style.display = 'flex';
+        location.children[1].style.display = 'none';
+
+        // For Med
+        med.children[0].style.display = 'flex';
+        med.children[1].style.display = 'none';
+
+        // For Bot
+        bot.children[0].style.display = 'none';
+        bot.children[1].style.display = 'none';
+
+    } else if(condition === 'location'){
+        doc.style.height = '24.6%';
+        bot.style.height = '0';
+        location.style.height = '49.2%';
+        med.style.height = '24.6%';
+    
+        // For Doc
+        doc.children[0].style.display = 'flex';
+        doc.children[1].style.display = 'none';
+
+        // For Location
+        location.children[0].style.display = 'none';
+        location.children[1].style.display = 'flex';
+
+        // For Med
+        med.children[0].style.display = 'flex';
+        med.children[1].style.display = 'none';
+
+        // For Bot
+        bot.children[0].style.display = 'none';
+        bot.children[1].style.display = 'none';
+
+    } else if(condition === 'med'){
+        doc.style.height = '0';
+        bot.style.height = '24.6%';
+        location.style.height = '24.6%';
+        med.style.height = '49.2%';
+    
+        // For Doc
+        doc.children[0].style.display = 'none';
+        doc.children[1].style.display = 'none';
+
+        // For Location
+        location.children[0].style.display = 'flex';
+        location.children[1].style.display = 'none';
+
+        // For Med
+        med.children[0].style.display = 'none';
+        med.children[1].style.display = 'flex';
+
+        // For Bot
+        bot.children[0].style.display = 'flex';
+        bot.children[1].style.display = 'none';
+
+    } else if(condition === 'bot'){
+        doc.style.height = '0';
+        bot.style.height = '49.2%';
+        location.style.height = '24.6%';
+        med.style.height = '24.6%';
+    
+        // For Doc
+        doc.children[0].style.display = 'none';
+        doc.children[1].style.display = 'none';
+
+        // For Location
+        location.children[0].style.display = 'flex';
+        location.children[1].style.display = 'none';
+
+        // For Med
+        med.children[0].style.display = 'flex';
+        med.children[1].style.display = 'none';
+
+        // For Bot
+        bot.children[0].style.display = 'none';
+        bot.children[1].style.display = 'flex';
+    } else {
+        doc.style.height = '24.6%';
+        bot.style.height = '24.6%';
+        location.style.height = '24.6%';
+        med.style.height = '24.6%';
+
+        // For Doc
+        doc.children[0].style.display = 'block';
+        doc.children[1].style.display = 'none';
+
+        // For Location
+        location.children[0].style.display = 'block';
+        location.children[1].style.display = 'none';
+
+        // For Med
+        med.children[0].style.display = 'block';
+        med.children[1].style.display = 'none';
+
+        // For Bot
+        bot.children[0].style.display = 'block';
+        bot.children[1].style.display = 'none';
+    }
 }
   

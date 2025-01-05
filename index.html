@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaquery.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/owl-carousel/owl.theme.default.min.css">
 </head>
@@ -131,38 +131,46 @@
     </header>
 
     <!-- HEADER MOBILE -->
-     <section class=" bg-whitegreen w-100 d-lg-none">
+    <section class=" bg-whitegreen w-100 d-lg-none position-sticky"
+        style="top: 0; left: 0; z-index: 100; filter: drop-shadow(0px 0px 5px #00000083);">
         <div class="p-3 d-flex justify-content-between align-items-center">
             <div class="" style="width: 25%;">
                 <img src="./assets/icons/logo.png" alt="" class="w-100">
             </div>
-    
+
             <div class="d-flex align-items-center" style="width: fit-content;">
                 <button type="button" class="login-btn font-regular text-xs">I'm a Doctor</button>
                 <!-- Search -->
                 <div class="mx-3">
-                    <svg class="" width="18" height="18" viewBox="0 0 15 15" fill="#358C79" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.6447 13.7494L10.5233 9.58945C11.3298 8.57841 11.8161 7.29724 11.8161 5.90417C11.8161 2.64337 9.17268 0 5.90803 0C2.64337 0 0 2.64723 0 5.90803C0 9.16883 2.64337 11.8122 5.90803 11.8122C7.3204 11.8122 8.61314 11.3182 9.6319 10.4924L13.7262 14.6254C13.8497 14.7566 14.0195 14.8222 14.1854 14.8222C14.3437 14.8222 14.5019 14.7643 14.6215 14.6485C14.8762 14.4054 14.8839 14.0041 14.6447 13.7494ZM5.90803 10.5426C4.66931 10.5426 3.50391 10.0602 2.62793 9.18426C1.75196 8.30828 1.26959 7.14288 1.26959 5.90803C1.26959 4.66931 1.75196 3.50391 2.62793 2.63179C3.50391 1.75581 4.66931 1.27345 5.90803 1.27345C7.14674 1.27345 8.31214 1.75581 9.18812 2.63179C10.0641 3.50777 10.5465 4.67317 10.5465 5.90803C10.5465 7.14674 10.0641 8.31214 9.18812 9.18426C8.31214 10.0602 7.14674 10.5426 5.90803 10.5426Z" />
+                    <svg class="" width="18" height="18" viewBox="0 0 15 15" fill="#358C79"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.6447 13.7494L10.5233 9.58945C11.3298 8.57841 11.8161 7.29724 11.8161 5.90417C11.8161 2.64337 9.17268 0 5.90803 0C2.64337 0 0 2.64723 0 5.90803C0 9.16883 2.64337 11.8122 5.90803 11.8122C7.3204 11.8122 8.61314 11.3182 9.6319 10.4924L13.7262 14.6254C13.8497 14.7566 14.0195 14.8222 14.1854 14.8222C14.3437 14.8222 14.5019 14.7643 14.6215 14.6485C14.8762 14.4054 14.8839 14.0041 14.6447 13.7494ZM5.90803 10.5426C4.66931 10.5426 3.50391 10.0602 2.62793 9.18426C1.75196 8.30828 1.26959 7.14288 1.26959 5.90803C1.26959 4.66931 1.75196 3.50391 2.62793 2.63179C3.50391 1.75581 4.66931 1.27345 5.90803 1.27345C7.14674 1.27345 8.31214 1.75581 9.18812 2.63179C10.0641 3.50777 10.5465 4.67317 10.5465 5.90803C10.5465 7.14674 10.0641 8.31214 9.18812 9.18426C8.31214 10.0602 7.14674 10.5426 5.90803 10.5426Z" />
                     </svg>
                 </div>
                 <!-- Menu Btn -->
                 <div id="mob-menu-btn" class="" onclick="menuShow()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#358C79" viewBox="0 0 448 512">
-                        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
                 </div>
-                <div id="mob-menu-close" class="d-none"  onclick="menuShow()">
+                <div id="mob-menu-close" class="d-none" onclick="menuShow()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#358C79" viewBox="0 0 384 512">
-                        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
                 </div>
             </div>
         </div>
         <!-- Header Detail -->
-         <div id="mob-h-detail" class="w-100 min-vh-100 font-bold text-primary2 d-none" >
+        <div id="mob-h-detail" class="w-100 min-vh-100 font-bold text-primary2 d-none">
             <div class="w-100 d-flex align-items-center justify-content-between px-3 py-2 border">
                 <p class="mt-3" style="width: fit-content;">Consult a Doctor</p>
                 <svg class="" width="16" height="16" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z" fill="#358C79"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.29316 2.90864C4.90228 2.51775 4.90228 1.884 5.29316 1.49312C5.68405 1.10223 6.3178 1.10223 6.70869 1.49312L13.0084 7.79284C13.3989 8.18337 13.3989 8.81653 13.0084 9.20706L6.70869 15.5068C6.3178 15.8977 5.68405 15.8977 5.29316 15.5068C4.90228 15.1159 4.90228 14.4822 5.29316 14.0913L10.8845 8.49995L5.29316 2.90864Z"
+                        fill="#358C79"></path>
                 </svg>
             </div>
             <!-- Find -->
@@ -179,11 +187,13 @@
             </div>
             <!-- Discover -->
             <div class="w-100 d-flex align-items-center justify-content-between px-3 py-2 border-bottom font-regular">
-                <p class="mt-3" style="width: fit-content;">Discover Your Symptoms: Get Expert Advice in Just 5 Minutes!</p>
+                <p class="mt-3" style="width: fit-content;">Discover Your Symptoms: Get Expert Advice in Just 5 Minutes!
+                </p>
             </div>
 
             <!-- EMAIL & PHONE SECTION -->
-            <section class="d-flex align-items-center text-primary2 text-sm justify-content-between mt-5" style="margin-top: 10rem; width: fit-content; margin: 0 auto 0 auto;">
+            <section class="d-flex align-items-center text-primary2 text-sm justify-content-between mt-5"
+                style="margin-top: 10rem; width: fit-content; margin: 0 auto 0 auto;">
                 <div class="d-flex align-items-center mr-4">
                     <svg width="18" height="18" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -203,22 +213,23 @@
                     <span class="ml-2" style="width: fit-content;">+92 340 4859817</span>
                 </div>
             </section>
-         </div>
-     </section>
+        </div>
+    </section>
 
     <!-- HERO SECTION DESKTOP -->
     <section class="w-100 d-none d-lg-block " style="height: 80vh; ">
         <div id="hero-main" class="w-100 h-100 d-flex justify-content-between" style="margin-top: 0.5%;">
             <!-- Doctor -->
-            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.2s ease-in-out;"
-                onclick="heroAnimaion('doc')">
+            <section class="h-100 cursor-pointer hero-gradient d-flex"
+                style="width: 24.6%; transition: all 0.2s ease-in-out;" onclick="heroAnimaion('doc')">
                 <!-- Show -->
                 <div class="w-50" style="margin: auto;">
                     <img src="./assets/images/hero-doc.png" alt="" class="w-100">
                 </div>
 
                 <!-- Hide -->
-                <div class="position-relative w-100 h-100 hero-gradient align-items-center" style="display: none; padding-left: 150px;">
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center"
+                    style="display: none; padding-left: 150px;">
                     <!-- close Btn -->
                     <!-- <a class="position-absolute cursor-pointer" style="width: 50px; top: 50px; left: 50px;">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
@@ -229,10 +240,11 @@
                             Consult top <br><span class="font-bold">doctors <span
                                     class="text-primary2 text-capitalize">100 Pkr</span></span>
                         </h2>
-                        <p class="hero-desc font-light text-2xl text-green" style="opacity: 0.5;">Get 24/7 consults with top
+                        <p class="hero-desc font-light text-2xl text-green" style="opacity: 0.5;">Get 24/7 consults with
+                            top
                             doctors. Book fast & find great prices for quality care</p>
                         <div class="d-flex align-items-center">
-                            <img src="./assets/icons/consult.png" alt="" style="width: 12rem;"> 
+                            <img src="./assets/icons/consult.png" alt="" style="width: 12rem;">
                             <a class="cursor-pointer d-flex align-items-center text-medium ml-4"
                                 style="text-decoration: none !important;">
                                 <span class="text-green font-light text-sm">Your first query consult is free</span>
@@ -248,43 +260,52 @@
                             Verified By<br><span class="text-xl">PMC (Pakistan Medical Commision)</span>
                         </p>
                     </div>
-                    
+
                     <div class="position-absolute" style="bottom: 0; right: 30px; width: 25%;">
                         <div class="w-100 position-relative">
-                            <img src="./assets/icons/service.png" alt="" class="position-absolute" style="top: -30px; left: -60px; width: 50%;">
+                            <img src="./assets/icons/service.png" alt="" class="position-absolute"
+                                style="top: -30px; left: -60px; width: 50%;">
                             <img src="./assets/images/hero-doc.png" alt="" class="w-100">
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
             <!-- Location -->
-            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('location')">
+            <section class="h-100 cursor-pointer hero-gradient d-flex"
+                style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('location')">
                 <!-- Show -->
                 <div class="w-50" style="margin: auto;">
                     <img src="./assets/images/hero-location.png" alt="" class="w-100">
                 </div>
                 <!-- Hide -->
-                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between" style="display: none; padding: 0 100px 0 100px;">
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between"
+                    style="display: none; padding: 0 100px 0 100px;">
                     <div class="w-50">
                         <h2 class="hero-heading font-light text-uppercase text-dark">
-                            Discover <span class="font-bold text-primary2">Top<br><span class="font-bold text-dark">HOSPITALS <span class="font-light">& </span>EXPERT<br></span>Physician.
+                            Discover <span class="font-bold text-primary2">Top<br><span
+                                    class="font-bold text-dark">HOSPITALS <span class="font-light">&
+                                    </span>EXPERT<br></span>Physician.
                         </h2>
-                        <p class="hero-desc font-light text-2xl text-green" style="opacity: 0.5;">Explore hospitals, find dedicated doctors. Exceptional care starts here.</p>
+                        <p class="hero-desc font-light text-2xl text-green" style="opacity: 0.5;">Explore hospitals,
+                            find dedicated doctors. Exceptional care starts here.</p>
                         <p class="font-regular text-2xl text-green" style="opacity: 0.7;">Find Hospitals by Cities</p>
-                        <section class="d-flex align-items-center bg-white rounded-lg overflow-hidden text-sm" style="border: 1px #C8D4DC solid; padding: 7px 0; margin: 15px 0 15px 0;">
+                        <section class="d-flex align-items-center bg-white rounded-lg overflow-hidden text-sm"
+                            style="border: 1px #C8D4DC solid; padding: 7px 0; margin: 15px 0 15px 0;">
                             <div class="d-flex align-items-center text-green ml-3 mr-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" fill="currentColor"
                                     viewBox="0 0 384 512">
-                                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                    <path
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                                 </svg>
                             </div>
                             <!-- City -->
                             <div class="d-flex align-items-center" style="padding-right: 20px;">
-                                <select class="text-green" style="border: transparent !important; background: transparent !important; outline: none !important;">
-                                    <option >Lahore</option>
-                                    <option >Karachi</option>
-                                    <option >Faisalabad</option>
+                                <select class="text-green"
+                                    style="border: transparent !important; background: transparent !important; outline: none !important;">
+                                    <option>Lahore</option>
+                                    <option>Karachi</option>
+                                    <option>Faisalabad</option>
                                 </select>
                             </div>
                             <span style="border-left: rgba(0, 0, 0,0.3) solid 2px; height: 30px;"></span>
@@ -295,9 +316,11 @@
                             </div>
                         </section>
                         <div class="mt-4">
-                            <a class="cursor-pointer bg-dark text-light font-light" style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Find Doctor by Speciality</a> 
-                        </div>           
-                        
+                            <a class="cursor-pointer bg-dark text-light font-light"
+                                style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Find
+                                Doctor by Speciality</a>
+                        </div>
+
                     </div>
                     <div style="width: 45%;">
                         <img src="./assets/images/hero-location.png" alt="" class="w-100">
@@ -305,22 +328,29 @@
                 </div>
             </section>
             <!-- Medicine -->
-            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('med')">
+            <section class="h-100 cursor-pointer hero-gradient d-flex"
+                style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('med')">
                 <!-- Show -->
                 <div class="" style="margin: auto; width: 35%;">
                     <img src="./assets/images/hero-med.png" alt="" class="w-100">
                 </div>
                 <!-- Hide -->
-                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between" style="display: none; padding: 0 100px 0 100px;">
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between"
+                    style="display: none; padding: 0 100px 0 100px;">
                     <div class="w-50">
                         <h2 class="hero-heading font-light text-uppercase text-dark">
-                            Your <span class="font-bold text-primary2">Health </span> First<br><span class="font-bold text-primary2">Easy </span><span class="font-bold">Pharmacy</span><br>Solutions
+                            Your <span class="font-bold text-primary2">Health </span> First<br><span
+                                class="font-bold text-primary2">Easy </span><span
+                                class="font-bold">Pharmacy</span><br>Solutions
                         </h2>
-                        <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Save Big on Meds & Stay Healthy, All in One Place!</p>
+                        <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Save Big on Meds
+                            & Stay Healthy, All in One Place!</p>
                         <div class="mt-4">
-                            <a class="cursor-pointer bg-dark text-light font-light" style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Shop Now for Savings!</a> 
-                        </div>           
-                        
+                            <a class="cursor-pointer bg-dark text-light font-light"
+                                style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Shop
+                                Now for Savings!</a>
+                        </div>
+
                     </div>
                     <div style="width: 25%;">
                         <img src="./assets/images/hero-med.png" alt="" class="w-100">
@@ -328,23 +358,29 @@
                 </div>
             </section>
             <!-- Bot -->
-            <section class="h-100 cursor-pointer hero-gradient d-flex" style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('bot')">
+            <section class="h-100 cursor-pointer hero-gradient d-flex"
+                style="width: 24.6%; transition: all 0.1s ease-in-out;" onclick="heroAnimaion('bot')">
                 <!-- Show -->
                 <div class="w-50" style="margin: auto;">
                     <img src="./assets/images/hero-bot.png" alt="" class="w-100">
                 </div>
                 <!-- Hide -->
-                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between" style="display: none; padding: 0 100px 0 100px;">
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between"
+                    style="display: none; padding: 0 100px 0 100px;">
                     <div class="w-50">
                         <h2 class="hero-heading font-light text-uppercase text-dark">
-                            Instant <span class="font-bold text-primary2">Symptom<br> Assistance  </span> With<br>AI Chat bot
+                            Instant <span class="font-bold text-primary2">Symptom<br> Assistance </span> With<br>AI Chat
+                            bot
                         </h2>
-                        <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Get Quick Answers to Your Health Concerns with
+                        <p class="font-light text-2xl text-green" style="opacity: 0.5; margin: 40px 0;">Get Quick
+                            Answers to Your Health Concerns with
                             LetsUpDoc AI Assistance</p>
                         <div class="mt-4">
-                            <a class="cursor-pointer bg-dark text-light font-light" style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Lets chat</a> 
-                        </div>           
-                        
+                            <a class="cursor-pointer bg-dark text-light font-light"
+                                style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Lets
+                                chat</a>
+                        </div>
+
                     </div>
                     <div style="width: 50%;">
                         <img src="./assets/images/hero-bot.png" alt="" class="w-100">
@@ -354,54 +390,233 @@
         </div>
     </section>
 
-    <!-- SEARCH SECTION -->
-    <section class="w-100 text-light" style="padding: 100px;">
-        <div class="w-100 position-relative">
-            <h2 style="font-size: 42px;" class="font-bold text-green text-center">MOST <span class="text-sec">SEARCHED
-                </span> Domains</h2>
-            <p class="font-light text-xl text-green text-center">Discover the top healthcare choices people are
-                searching for</p>
-            <img src="./assets/images/search.png" alt="" style="width: 130px; right: 0; top: -30px;" class="position-absolute d-none d-lg-block">
-            <div class="d-flex align-items-center w-100" style="margin-top: 60px;">
-                <a class="am-prev-search cursor-pointer"><img src="./assets/icons/left.png" alt="" style="width: 30px;"></a>
-                <div class="owl-carousel owl-search ">
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="./assets/images/doc2.png" alt="" class="w-25">
-                        <p class="font-regular text-green text-sm text-uppercase text-center mt-3">Primary
-                            care<br>Physicians</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="./assets/images/doc2.png" alt="" class="w-25">
-                        <p class="font-regular text-green text-sm text-uppercase text-center mt-3">Primary
-                            care<br>Physicians</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="./assets/images/doc2.png" alt="" class="w-25">
-                        <p class="font-regular text-green text-sm text-uppercase text-center mt-3">Primary
-                            care<br>Physicians</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="./assets/images/doc2.png" alt="" class="w-25">
-                        <p class="font-regular text-green text-sm text-uppercase text-center mt-3">Primary
-                            care<br>Physicians</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="./assets/images/doc2.png" alt="" class="w-25">
-                        <p class="font-regular text-green text-sm text-uppercase text-center mt-3">Primary
-                            care<br>Physicians</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="./assets/images/doc2.png" alt="" class="w-25">
-                        <p class="font-regular text-green text-sm text-uppercase text-center mt-3">Primary
-                            care<br>Physicians</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="./assets/images/doc2.png" alt="" class="w-25">
-                        <p class="font-regular text-green text-sm text-uppercase text-center mt-3">Primary
-                            care<br>Physicians</p>
+    <!-- HERO SECTION MOBILE -->
+    <section class="w-100 d-lg-none" style="height: 90vh; ">
+        <div id="hero-mob" class="w-100 h-100 d-flex flex-column justify-content-between">
+            <!-- Doctor -->
+            <section class="w-100 cursor-pointer hero-gradient d-flex"
+                style="height: 24.6%; margin-top: 0.4%; transition: all 0.2s ease-in-out;"
+                onclick="heroMobAnimaion('doc')">
+                <!-- Show -->
+                <div class="w-100 align-items-center justify-content-between p-4" style="display: flex;">
+                    <h2 class="text-2xl font-light text-uppercase text-dark" style="width: fit-content;">
+                        Consult top <br> <span class="font-bold">doctors <span class="text-primary2 text-capitalize">100
+                                Pkr</span></span>
+                    </h2>
+                    <div class="" style="width: 20%;">
+                        <img src="./assets/images/hero-doc.png" alt="" class="w-75">
                     </div>
                 </div>
-                <a class="am-next-search cursor-pointer"><img src="./assets/icons/right.png" alt="" style="width: 30px;"></a>
+
+                <!-- Hide -->
+                <div class="w-100 h-100 hero-gradient align-items-center"
+                    style="display: none; padding: 20px 0 20px 0;">
+                    <div class="" style="width: 90%; margin: auto;">
+                        <h2 class="text-2xl font-light text-uppercase text-dark">
+                            Consult top <br><span class="font-bold">doctors <span
+                                    class="text-primary2 text-capitalize">100 Pkr</span></span>
+                        </h2>
+                        <p class="font-light text-green" style="opacity: 0.5;">Get 24/7 consults with top
+                            doctors. Book fast & find great prices for quality care</p>
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/icons/consult.png" alt="" style="width: 8rem;">
+                            <a class="cursor-pointer d-flex align-items-center text-medium ml-4"
+                                style="text-decoration: none !important;">
+                                <span class="text-green font-light text-xs">Your first query consult is free</span>
+                                <div class="ml-3 text-sec" style="width: 30px; ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+                                        <path
+                                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Location -->
+            <section class="w-100 cursor-pointer hero-gradient d-flex"
+                style="height: 24.6%; margin-top: 0.4%; transition: all 0.1s ease-in-out;"
+                onclick="heroMobAnimaion('location')">
+                <!-- Show -->
+                <div class="w-100 align-items-center justify-content-between p-4" style="display: flex;">
+                    <h2 class="text-2xl font-light text-uppercase text-dark">
+                        Discover <span class="font-bold text-primary2">Top<br><span
+                                class="font-bold text-dark">HOSPITALS <span class="font-light">&
+                                </span>EXPERT<br></span>Physician.
+                    </h2>
+                    <div class="" style="width: 20%;">
+                        <img src="./assets/images/hero-location.png" alt="" class="w-75">
+                    </div>
+                </div>
+                <!-- Hide -->
+                <div class="w-100 h-100 hero-gradient align-items-center justify-content-between"
+                    style="display: none; padding: 20px 0 20px 0;">
+                    <div class="" style="width: 90%; margin: 0 auto 0 auto;">
+                        <h2 class="text-2xl font-light text-uppercase text-dark">
+                            Discover <span class="font-bold text-primary2">Top<br><span
+                                    class="font-bold text-dark">HOSPITALS <span class="font-light">&
+                                    </span>EXPERT<br></span>Physician.
+                        </h2>
+                        <p class="font-light text-green" style="opacity: 0.5;">Explore hospitals, find dedicated
+                            doctors. Exceptional care starts here.</p>
+                        <p class="font-regular text-lg text-green" style="opacity: 0.7;">Find Hospitals by Cities</p>
+                        <section class="d-flex align-items-center bg-white rounded-lg overflow-hidden text-sm"
+                            style="border: 1px #C8D4DC solid; padding: 7px 0; margin: 15px 0 15px 0;">
+                            <div class="d-flex align-items-center text-green ml-3 mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" fill="currentColor"
+                                    viewBox="0 0 384 512">
+                                    <path
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                </svg>
+                            </div>
+                            <!-- City -->
+                            <div class="d-flex align-items-center" style="padding-right: 20px;">
+                                <select class="text-green"
+                                    style="border: transparent !important; background: transparent !important; outline: none !important;">
+                                    <option>Lahore</option>
+                                    <option>Karachi</option>
+                                    <option>Faisalabad</option>
+                                </select>
+                            </div>
+                            <span style="border-left: rgba(0, 0, 0,0.3) solid 2px; height: 30px;"></span>
+                            <!-- Text input -->
+                            <div class="d-flex align-items-center ml-3">
+                                <input type="text" class="" placeholder="Doctor Hospital, Lahore"
+                                    style="border: transparent !important; outline: none !important;">
+                            </div>
+                        </section>
+                        <div class="mt-4">
+                            <a class="text-sm bg-dark text-light font-light"
+                                style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Find
+                                Doctor by Speciality</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Medicine -->
+            <section class="w-100 cursor-pointer hero-gradient d-flex"
+                style="height: 24.6%; margin-top: 0.4%; transition: all 0.1s ease-in-out;"
+                onclick="heroMobAnimaion('med')">
+                <!-- Show -->
+                <div class="w-100 align-items-center justify-content-between p-4" style="display: flex;">
+                    <h2 class="text-2xl font-light text-uppercase text-dark">
+                        Your <span class="font-bold text-primary2">Health </span> First<br><span
+                            class="font-bold text-primary2">Easy </span><span
+                            class="font-bold">Pharmacy</span><br>Solutions
+                    </h2>
+                    <div class="" style="width: 20%;">
+                        <img src="./assets/images/hero-med.png" alt="" class="w-75">
+                    </div>
+                </div>
+                <!-- Hide -->
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between"
+                    style="display: none; padding: 20px 0 20px 0;">
+                    <div class="" style="width: 90%; margin: 0 auto 0 auto;">
+                        <h2 class="text-2xl font-light text-uppercase text-dark">
+                            Your <span class="font-bold text-primary2">Health </span> First<br><span
+                                class="font-bold text-primary2">Easy </span><span
+                                class="font-bold">Pharmacy</span><br>Solutions
+                        </h2>
+                        <p class="font-light text-green" style="opacity: 0.5; margin: 10px 0;">Save Big on Meds & Stay
+                            Healthy, All in One Place!</p>
+                        <div class="mt-4">
+                            <a class="cursor-pointer bg-dark text-sm text-light font-light"
+                                style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Shop
+                                Now for Savings!</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Bot -->
+            <section class="w-100 cursor-pointer hero-gradient d-flex"
+                style="height: 24.6%; margin-top: 0.4%; transition: all 0.1s ease-in-out;"
+                onclick="heroMobAnimaion('bot')">
+                <!-- Show -->
+                <div class="w-100 align-items-center justify-content-between p-4" style="display: flex;">
+                    <h2 class="text-2xl font-light text-uppercase text-dark">
+                        Instant <span class="font-bold text-primary2">Symptom<br> Assistance </span> With<br>AI Chat bot
+                    </h2>
+                    <div class="" style="width: 25%;">
+                        <img src="./assets/images/hero-bot.png" alt="" class="w-100">
+                    </div>
+                </div>
+                <!-- Hide -->
+                <div class="position-relative w-100 h-100 hero-gradient align-items-center justify-content-between"
+                    style="display: none; padding: 20px 0 20px 0;">
+                    <div class="" style="width: 90%; margin: 0 auto 0 auto;">
+                        <h2 class="text-2xl font-light text-uppercase text-dark">
+                            Instant <span class="font-bold text-primary2">Symptom<br> Assistance </span> With<br>AI Chat
+                            bot
+                        </h2>
+                        <p class="font-light text-green" style="opacity: 0.5; margin: 10px 0;">Get Quick Answers to Your
+                            Health Concerns with
+                            LetsUpDoc AI Assistance</p>
+                        <div class="mt-4">
+                            <a class="cursor-pointer bg-dark text-sm text-light font-light"
+                                style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">Lets
+                                chat</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- SEARCH SECTION -->
+    <section class="text-light" style="width: 80%; margin: 0 auto 0 auto; padding: 30px 0 30px 0;">
+        <div class="search-sec w-100 position-relative">
+            <h2 class="font-bold text-green text-center">MOST <span class="text-sec">SEARCHED
+                </span> Domains</h2>
+            <p class="font-light text-green text-center">Discover the top healthcare choices people are
+                searching for</p>
+            <img src="./assets/images/search.png" alt="" style="width: 130px; right: 0; top: -30px;"
+                class="position-absolute d-none d-lg-block">
+            <div class="d-flex align-items-center w-100" style="margin-top: 60px;">
+                <a class="am-prev-search cursor-pointer d-none d-lg-block"><img src="./assets/icons/left.png" alt=""
+                        style="width: 30px;"></a>
+                <div class="owl-carousel owl-search text-sm">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/doc2.png" alt="" class="w-50">
+                        <p class="font-regular text-green text-uppercase text-center mt-3">Primary
+                            care<br>Physicians 1</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/doc2.png" alt="" class="w-50">
+                        <p class="font-regular text-green text-uppercase text-center mt-3">Primary
+                            care<br>Physicians 2</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/doc2.png" alt="" class="w-50">
+                        <p class="font-regular text-green text-uppercase text-center mt-3">Primary
+                            care<br>Physicians 3</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/doc2.png" alt="" class="w-50">
+                        <p class="font-regular text-green text-uppercase text-center mt-3">Primary
+                            care<br>Physicians 4</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/doc2.png" alt="" class="w-50">
+                        <p class="font-regular text-green text-uppercase text-center mt-3">Primary
+                            care<br>Physicians 5</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/doc2.png" alt="" class="w-50">
+                        <p class="font-regular text-green text-uppercase text-center mt-3">Primary
+                            care<br>Physicians 6</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="./assets/images/doc2.png" alt="" class="w-50">
+                        <p class="font-regular text-green text-uppercase text-center mt-3">Primary
+                            care<br>Physicians 7</p>
+                    </div>
+                </div>
+                <a class="am-next-search cursor-pointer d-none d-lg-block"><img src="./assets/icons/right.png" alt=""
+                        style="width: 30px;"></a>
             </div>
         </div>
     </section>
@@ -431,97 +646,110 @@
 
 
     <!-- CONSULT SECTION -->
-    <section class="w-100 text-light" style="padding: 100px;">
-        <div class="w-100">
-            <h2 style="font-size: 42px;" class="font-bold text-green text-center">Consult Our <span
-                    class="text-sec">Top-Rated </span> Physicians</h2>
-            <p class="font-light text-xl text-green text-center">Find Top Doctors for Quick Medical Consultations via
+    <section class="text-light" style="width: 80%; margin: 0 auto 0 auto; padding: 30px 0 20px 0;">
+        <div class="search-sec w-100">
+            <h2 class="font-bold text-green text-center">Consult Our <span class="text-sec">Top-Rated </span> Physicians
+            </h2>
+            <p class="font-light text-green text-center mb-5">Find Top Doctors for Quick Medical Consultations via
                 Video, Phone, or Chat</p>
-            <div class="d-flex justify-content-between w-100" style="margin-top: 60px;">
-                <div class="d-flex flex-column align-items-center item" style="width: 18%;">
+            <div class="owl-carousel owl-consult2">
+                <div class="d-flex flex-column align-items-center item">
                     <img src="./assets/images/doc2.png" alt="" class="w-25">
                     <h3 class="text-green font-regular mt-3" style="font-size: 18px !important;">Dr. Hassan</h3>
                     <p class="font-light text-sec text-xs text-uppercase text-center">General Practitioner</p>
                 </div>
-                <div class="d-flex flex-column align-items-center item" style="width: 18%;">
+                <div class="d-flex flex-column align-items-center item">
                     <img src="./assets/images/doc2.png" alt="" class="w-25">
                     <h3 class="text-green font-regular mt-3" style="font-size: 18px !important;">Dr. Ashar Malik</h3>
                     <p class="font-light text-sec text-xs text-uppercase text-center">Dentist</p>
                 </div>
-                <div class="d-flex flex-column align-items-center item" style="width: 18%;">
+                <div class="d-flex flex-column align-items-center item">
                     <img src="./assets/images/doc2.png" alt="" class="w-25">
                     <h3 class="text-green font-regular mt-3" style="font-size: 18px !important;">Dr. Asim</h3>
                     <p class="font-light text-sec text-xs text-uppercase text-center">Dermatologist</p>
                 </div>
-                <div class="d-flex flex-column align-items-center item" style="width: 18%;">
+                <div class="d-flex flex-column align-items-center item">
                     <img src="./assets/images/doc2.png" alt="" class="w-25">
                     <h3 class="text-green font-regular mt-3" style="font-size: 18px !important;">Dr.Ayub Khan</h3>
                     <p class="font-light text-sec text-xs text-uppercase text-center">General Practitioner</p>
                 </div>
-                <div class="d-flex flex-column align-items-center item" style="width: 18%;">
+                <div class="d-flex flex-column align-items-center item">
                     <img src="./assets/images/doc2.png" alt="" class="w-25">
                     <h3 class="text-green font-regular mt-3" style="font-size: 18px !important;">Dr. Ateeb Riaz</h3>
                     <p class="font-light text-sec text-xs text-uppercase text-center">Dentist</p>
                 </div>
-                <div class="d-flex flex-column align-items-center item" style="width: 18%;">
+                <div class="d-flex flex-column align-items-center item">
                     <img src="./assets/images/doc2.png" alt="" class="w-25">
-                    <h3 class="text-green font-regular mt-3" style="font-size: 18px !important;">Dr. Mohsin Ali</h3>
+                    <h3 class="text-green font-regular mt-3" style="font-size: 18px !important; text-wrap: 0;">Dr.
+                        Mohsin Ali</h3>
                     <p class="font-light text-sec text-xs text-uppercase text-center">Dermatologist</p>
                 </div>
             </div>
         </div>
         <!-- Detail -->
-         <div class="d-flex align-items-center">
+        <div class="w-100">
             <!-- <a class="am-prev-consult cursor-pointer" style="width: 30px;"><img src="./assets/icons/left.png" alt="" style="width: 100%;"></a> -->
             <div class="owl-carousel owl-consult">
-                <div class="w-100 d-flex align-items-end justify-content-between text-green" >
-                <div style="width: 40%;">
-                    <img src="./assets/images/dr1.png" alt="" class="w-100">
-                </div>
-                <div style="width: 55%;" class="font-light text-green">
-                    <div class="d-flex align-items-center">
-                        <h3 class="font-bold mr-3">Dr. Ayub Khan</h3>
-                        <span class="bg-sec text-light text-sm cursor-pointer" style="padding: 5px 15px; border-radius: 7px;">Available Today at 8:00 PM</span>
+                <div class="w-100 d-flex flex-column flex-lg-row align-items-end justify-content-between text-green">
+                    <div class="consult-img">
+                        <img src="./assets/images/dr1.png" alt="" class="w-100">
+                        <p class="bg-primary2 text-light text-sm d-lg-none text-center" style="width: 90%; margin: 0 auto 0 auto; padding: 5px 15px; border-radius: 7px;">Available Today at 8:00 PM</p>
                     </div>
-                    <p class="text-sec text-xl font-medium" style="margin: 0;">Dentist</p>
-                    <div class="d-flex align-items-center text-dark font-regular">
-                        <div class="d-flex align-items-center text-primary2 mr-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" fill="currentColor"
-                                viewBox="0 0 384 512">
-                                <path
-                                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-                            </svg>
+                    <div class="consult-content" class="font-light text-green">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <h3 class="font-bold mr-3">Dr. Ayub Khan</h3>
+                            <span class="bg-sec text-light text-sm d-none d-lg-block cursor-pointer"
+                                style="padding: 5px 15px; border-radius: 7px;">Available Today at 8:00 PM</span>
                         </div>
-                        <span>Karachi, Pakistan</span>
+                        <p class="text-sec lg-text-xl font-medium text-center text-lg-left" style="margin: 0;">Dentist</p>
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start text-dark font-regular">
+                            <div class="d-flex align-items-center text-primary2 mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" fill="currentColor"
+                                    viewBox="0 0 384 512">
+                                    <path
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                </svg>
+                            </div>
+                            <span>Karachi, Pakistan</span>
+                        </div>
+                        <p class="text-dark font-regular text-center text-lg-left" style="margin: 30px 0;">Dentist, Aesthetic Physician,
+                            Cosmetologist M.B.B.S., MSc Clinical Dermatology, Diploma in Aesthetic Medicine</p>
+                        <div class="d-flex justify-content-center justify-content-lg-between w-100 text-primary2 font-regular">
+                            <div style="width: fit-content;">
+                                <p class="text-dark" style="margin: 0;">Experience</p>
+                                <p class="text-center font-bold">3 Years</p>
+                            </div>
+                            <div class="mx-3" style="width: fit-content;">
+                                <p class="text-dark" style="margin: 0;">Rating</p>
+                                <p class="text-center font-bold">4.5</p>
+                            </div>
+                            <div style="width: fit-content;">
+                                <p class="text-dark" style="margin: 0;">Satisfied Patients</p>
+                                <p class="text-center font-bold">99% (207)</p>
+                            </div>
+                        </div>
+                        <p class="text-dark font-regular text-center text-lg-left" style="margin: 10px 0 27px 0;">Consulting Languages: English,
+                            Hindi, Urdu</p>
+                        <div class="font-regular text-center text-lg-left text-sm w-100 d-flex flex-wrap justify-content-between">
+                            <a class="bg-dark text-light mb-4 cursor-pointer"
+                                style="padding: 10px 15px; border-radius: 7px; width: 48%;">5 Mins Query Advice
+                                99pkr</a>
+                            <a class="text-green mb-4 cursor-pointer"
+                                style="padding: 10px 15px; border-radius: 7px; width: 48%; border: 1px #105742 solid;">30
+                                Mins Consultation 500pkr</a>
+                            <a class="text-green cursor-pointer"
+                                style="padding: 10px 15px; border-radius: 7px; width: 48%; border: 1px #105742 solid;">Video
+                                Consultation 900pkr</a>
+                            <a class="text-green cursor-pointer"
+                                style="padding: 10px 15px; border-radius: 7px; width: 48%; border: 1px #105742 solid;">Phone
+                                Consultation 400pkr</a>
+                        </div>
                     </div>
-                    <p class="text-dark font-regular" style="margin: 30px 0;">Dentist, Aesthetic Physician, Cosmetologist<br>M.B.B.S., MSc Clinical Dermatology, Diploma in Aesthetic Medicine</p>
-                    <div class="d-flex justify-content-between w-75 text-primary2 font-regular">
-                        <div style="width: fit-content;">
-                            <p class="text-dark" style="margin: 0;">Experience</p>
-                            <p class="text-center font-bold">3 Years</p>
-                        </div>
-                        <div style="width: fit-content;">
-                            <p class="text-dark" style="margin: 0;">Rating</p>
-                            <p class="text-center font-bold">4.5</p>
-                        </div>
-                        <div style="width: fit-content;">
-                            <p class="text-dark" style="margin: 0;">Satisfied Patients</p>
-                            <p class="text-center font-bold">99% (207)</p>
-                        </div>
-                    </div>
-                    <p class="text-dark font-regular" style="margin: 10px 0 27px 0;">Consulting Languages: English, Hindi, Urdu</p>
-                    <div class="font-regular w-100 d-flex flex-wrap justify-content-between">
-                        <a class="bg-dark text-light mb-4 cursor-pointer" style="padding: 10px 15px; border-radius: 7px; width: 48%;">5 Mins Query Advice 99pkr</a>
-                        <a class="text-green mb-4 cursor-pointer" style="padding: 10px 15px; border-radius: 7px; width: 48%; border: 1px #105742 solid;">30 Mins Consultation 500pkr</a>
-                        <a class="text-green cursor-pointer" style="padding: 10px 15px; border-radius: 7px; width: 48%; border: 1px #105742 solid;">Video Consultation 900pkr</a>
-                        <a class="text-green cursor-pointer" style="padding: 10px 15px; border-radius: 7px; width: 48%; border: 1px #105742 solid;">Phone Consultation 400pkr</a>
-                    </div>
-                </div>
                 </div>
             </div>
             <!-- <a class="am-next-consult cursor-pointer" style="width: 30px;"><img src="./assets/icons/right.png" alt="" style="width: 100%;"></a> -->
 
-         </div>
+        </div>
     </section>
 
     <!-- SAVE SECTION -->
@@ -552,72 +780,96 @@
     <section class="w-100 text-dark" style="padding: 100px;">
         <div class="w-100">
             <h2 style="font-size: 42px;" class="font-bold text-dark text-center">How It Works</h2>
-            <p class="font-light text-xl text-dark text-center mb-4">Explore our user-friendly platform for hassle-free online consultations</p>
+            <p class="font-light text-xl text-dark text-center mb-4">Explore our user-friendly platform for hassle-free
+                online consultations</p>
             <div class="d-flex" style="width: fit-content; margin: 10px auto 100px auto;">
-                <a class="font-light text-sm text-light bg-primary2" style="padding: 5px 25px; border-radius: 5px;">Chat</a>
+                <a class="font-light text-sm text-light bg-primary2"
+                    style="padding: 5px 25px; border-radius: 5px;">Chat</a>
                 <span style="margin: 0 20px;"></span>
-                <a class="font-light text-sm text-green cursor-pointer" style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Phone</a>
+                <a class="font-light text-sm text-green cursor-pointer"
+                    style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Phone</a>
                 <span style="margin: 0 20px;"></span>
-                <a class="font-light text-sm text-green cursor-pointer" style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Video</a>
+                <a class="font-light text-sm text-green cursor-pointer"
+                    style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Video</a>
                 <span style="margin: 0 20px;"></span>
-                <a class="font-light text-sm text-green cursor-pointer" style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Query</a>
+                <a class="font-light text-sm text-green cursor-pointer"
+                    style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Query</a>
             </div>
             <div class="d-flex justify-content-between">
                 <div class="" style="width: 60%;">
                     <div class="d-flex how-width" style="width: 60%;">
                         <!-- Progress -->
-                        <div class="font-regular text-light text-sm d-flex flex-column align-items-center" style="width: fit-content;">
+                        <div class="font-regular text-light text-sm d-flex flex-column align-items-center"
+                            style="width: fit-content;">
                             <div class="d-flex">
-                                <div class="font-regular text-light text-sm d-flex flex-column align-items-center" style="width: fit-content;">
-                                    <div class="bg-primary2  d-flex justify-content-center align-items-center" style="width: 35px; height: 35px; border: 1px #231F20 solid; border-radius: 50%;">1</div>
+                                <div class="font-regular text-light text-sm d-flex flex-column align-items-center"
+                                    style="width: fit-content;">
+                                    <div class="bg-primary2  d-flex justify-content-center align-items-center"
+                                        style="width: 35px; height: 35px; border: 1px #231F20 solid; border-radius: 50%;">
+                                        1</div>
                                     <div style="width: 1px; height: 110px; background-color: #C2D1D9;"></div>
                                 </div>
                                 <!-- Content -->
                                 <div class="font-light mt-2 ml-4">
                                     <h3 class="text-dark text-lg">Login Your Account</h3>
-                                    <p class="text-green text-sm" style="opacity: 0.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    <p class="text-green text-sm" style="opacity: 0.5;">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna.</p>
                                 </div>
                             </div>
 
                             <div class="d-flex">
-                                <div class="font-regular text-light text-sm d-flex flex-column align-items-center" style="width: fit-content;">
-                                    <div class="bg-dullgreen d-flex justify-content-center align-items-center" style="width: 35px; height: 35px; border-radius: 50%;">2</div>
+                                <div class="font-regular text-light text-sm d-flex flex-column align-items-center"
+                                    style="width: fit-content;">
+                                    <div class="bg-dullgreen d-flex justify-content-center align-items-center"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">2</div>
                                     <div style="width: 1px; height: 110px; background-color: #C2D1D9;"></div>
                                 </div>
                                 <!-- Content -->
                                 <div class="font-light mt-2 ml-4">
                                     <h3 class="text-dark text-lg">Select a Doctor</h3>
-                                    <p class="text-green text-sm" style="opacity: 0.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    <p class="text-green text-sm" style="opacity: 0.5;">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna.</p>
                                 </div>
                             </div>
 
                             <div class="d-flex">
-                                <div class="font-regular text-light text-sm d-flex flex-column align-items-center" style="width: fit-content;">
-                                    <div class="bg-dullgreen d-flex justify-content-center align-items-center" style="width: 35px; height: 35px; border-radius: 50%;">3</div>
+                                <div class="font-regular text-light text-sm d-flex flex-column align-items-center"
+                                    style="width: fit-content;">
+                                    <div class="bg-dullgreen d-flex justify-content-center align-items-center"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">3</div>
                                 </div>
                                 <!-- Content -->
                                 <div class="font-light mt-2 ml-4">
                                     <h3 class="text-dark text-lg">Talk to a Doctor</h3>
-                                    <p class="text-green text-sm" style="opacity: 0.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    <p class="text-green text-sm" style="opacity: 0.5;">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna.</p>
                                 </div>
                             </div>
                         </div>
-                        
-                         
+
+
                     </div>
                     <div class="font-light d-flex align-items-center position-relative" style="margin-top: 50px;">
-                        <a class="font-light text-sm text-light bg-primary2" style="padding: 5px 25px; border-radius: 5px;">Start Chat Consultation</a>
+                        <a class="font-light text-sm text-light bg-primary2"
+                            style="padding: 5px 25px; border-radius: 5px;">Start Chat Consultation</a>
                         <span style="margin: 0 20px;"></span>
-                        <a class="font-light text-sm text-dark" style="padding: 5px 15px; border-radius: 5px;">Still Confused? Watch Now</a>
+                        <a class="font-light text-sm text-dark" style="padding: 5px 15px; border-radius: 5px;">Still
+                            Confused? Watch Now</a>
                         <span style="margin: 0 5px;"></span>
-                        <div class="cursor-pointer d-flex justify-content-center align-items-center" style="width: 18px; height: 18px; border: 1px #231F20 solid; border-radius: 50%;">
-                            <div id="confuse-radio" class="cursor-pointer d-none" style="width: 12px; height: 12px; background-color: #105742; border-radius: 50%;"></div>
+                        <div class="cursor-pointer d-flex justify-content-center align-items-center"
+                            style="width: 18px; height: 18px; border: 1px #231F20 solid; border-radius: 50%;">
+                            <div id="confuse-radio" class="cursor-pointer d-none"
+                                style="width: 12px; height: 12px; background-color: #105742; border-radius: 50%;"></div>
                         </div>
                         <div style="margin-top: 35px;">
-                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 6.5L0.75 12.1292V0.870835L9 6.5Z" fill="#2DD36F"/>
-                                </svg>
-                                
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6.5L0.75 12.1292V0.870835L9 6.5Z" fill="#2DD36F" />
+                            </svg>
+
                         </div>
                     </div>
                 </div>
@@ -633,9 +885,12 @@
     <!-- OUR PATIENT SECTION -->
     <section class="w-100 text-dark" style="padding: 100px;">
         <div class="w-100 position-relative">
-            <h2 style="font-size: 42px;" class="font-bold text-green text-center">Our <span class="text-sec">patients </span> love us</h2>
-            <h2 style="font-size: 42px;" class="font-regular text-green text-center">The <span class="text-sec font-bold">#1 </span>online doctor consultation platform</h2>
-            <p class="font-light text-xl text-green text-center mb-4">Over 50 thousand users from 196+ countries trust LetsUpDoc with their health.</p>
+            <h2 style="font-size: 42px;" class="font-bold text-green text-center">Our <span class="text-sec">patients
+                </span> love us</h2>
+            <h2 style="font-size: 42px;" class="font-regular text-green text-center">The <span
+                    class="text-sec font-bold">#1 </span>online doctor consultation platform</h2>
+            <p class="font-light text-xl text-green text-center mb-4">Over 50 thousand users from 196+ countries trust
+                LetsUpDoc with their health.</p>
             <div class="owl-carousel owl-patients">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center justify-content-center" style="width: 20%;">
@@ -643,15 +898,20 @@
                     </div>
                     <div style="width: 75%;">
                         <div class="d-flex font-light">
-                            <svg width="48" height="34" viewBox="0 0 48 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.4758 33.7137H28.6267C27.9706 33.7137 27.4368 33.1801 27.4368 32.5239V13.4849L34.1797 -0.00195312H43.1043C43.423 -0.00195312 43.6667 0.108521 43.7906 0.309448C43.9146 0.509888 43.9044 0.7771 43.7619 1.06152L37.5512 13.4849H46.4758C47.1326 13.4849 47.6668 14.0181 47.6668 14.6737V32.5239C47.6668 33.1801 47.1326 33.7137 46.4758 33.7137ZM19.503 33.7137H1.65277C0.996643 33.7137 0.462891 33.1801 0.462891 32.5239V13.4849L7.20691 -0.00195312H16.1315C16.4497 -0.00195312 16.6934 0.108765 16.8175 0.30957C16.9415 0.510376 16.9313 0.777344 16.7891 1.06152L10.5784 13.4849H19.503C20.1591 13.4849 20.6928 14.0181 20.6928 14.6737V32.5239C20.6928 33.1801 20.1591 33.7137 19.503 33.7137Z" fill="#2A8A86"/>
-                                </svg>
+                            <svg width="48" height="34" viewBox="0 0 48 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M46.4758 33.7137H28.6267C27.9706 33.7137 27.4368 33.1801 27.4368 32.5239V13.4849L34.1797 -0.00195312H43.1043C43.423 -0.00195312 43.6667 0.108521 43.7906 0.309448C43.9146 0.509888 43.9044 0.7771 43.7619 1.06152L37.5512 13.4849H46.4758C47.1326 13.4849 47.6668 14.0181 47.6668 14.6737V32.5239C47.6668 33.1801 47.1326 33.7137 46.4758 33.7137ZM19.503 33.7137H1.65277C0.996643 33.7137 0.462891 33.1801 0.462891 32.5239V13.4849L7.20691 -0.00195312H16.1315C16.4497 -0.00195312 16.6934 0.108765 16.8175 0.30957C16.9415 0.510376 16.9313 0.777344 16.7891 1.06152L10.5784 13.4849H19.503C20.1591 13.4849 20.6928 14.0181 20.6928 14.6737V32.5239C20.6928 33.1801 20.1591 33.7137 19.503 33.7137Z"
+                                    fill="#2A8A86" />
+                            </svg>
                             <div class="text-xl w-75" style="margin: 15px 0 0 15px; color: #231F20;">
-                                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, tenetur quod quae mollitia nesciunt illo enim praesentium facere voluptatum porro atque omnis asperiores. Ipsum omnis repellendus quisquam labore ullam quam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, tenetur quod quae
+                                    mollitia nesciunt illo enim praesentium facere voluptatum porro atque omnis
+                                    asperiores. Ipsum omnis repellendus quisquam labore ullam quam.</p>
                                 <h4 class="text-seagreen text-2xl">Alvin Simon</h4>
                             </div>
                         </div>
-                        
+
                         <!-- <div class="d-flex align-items-center" style="width: fit-content; margin: 0 0 0 auto;">
                             <a style="width: 20px;" class="cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#A1AEB7">
@@ -666,15 +926,20 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center position-absolute" style="width: fit-content; margin: 0 0 0 auto; bottom: 0; right: 0; z-index: 1;">
+            <div class="d-flex align-items-center position-absolute"
+                style="width: fit-content; margin: 0 0 0 auto; bottom: 0; right: 0; z-index: 1;">
                 <a style="width: 20px;" class="am-prev-patients cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#A1AEB7">
-                        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                        <path
+                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                    </svg>
                 </a>
                 <span style="margin: 0 15px;"></span>
                 <a style="width: 20px;" class="am-next-patients cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#2A8A86">
-                        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        <path
+                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -683,15 +948,20 @@
     <!-- TAKE CONSULTATION SECTION -->
     <section class="w-100 bg-dark position-relative" style="padding: 100px 100px; overflow: hidden;">
         <div class="take-consult">
-            <h2 class="font-regular text-light" style="font-size: 52px;">Take a consultation<br><span class="font-medium text-sec">From Anywhere!</span></h2>
-            <p class="font-light text-light text-xl mt-4">Whether you reside in Karachi, London, New York, Dubai, Istanbul, or Islamabad, our system focuses on adjusting to your local time, ensuring proper appointments, sending relevant notifications, and updates exactly when you require them.<br><br>We value the significance of timely communication and we strive to keep you engaged and informed.</p>
+            <h2 class="font-regular text-light" style="font-size: 52px;">Take a consultation<br><span
+                    class="font-medium text-sec">From Anywhere!</span></h2>
+            <p class="font-light text-light text-xl mt-4">Whether you reside in Karachi, London, New York, Dubai,
+                Istanbul, or Islamabad, our system focuses on adjusting to your local time, ensuring proper
+                appointments, sending relevant notifications, and updates exactly when you require them.<br><br>We value
+                the significance of timely communication and we strive to keep you engaged and informed.</p>
         </div>
         <div class="position-absolute take-postion" style="right: 0; top: 0%; width: 58%;">
             <div class="w-100 position-relative">
-                <img src="./assets/icons/globe.png" alt="" class="w-100 position-absolute take-globe" style="top: 0%; left: 10%;">
+                <img src="./assets/icons/globe.png" alt="" class="w-100 position-absolute take-globe"
+                    style="top: 0%; left: 10%;">
                 <img src="./assets/images/take-consult.png" alt="" class="w-100">
             </div>
-            
+
         </div>
     </section>
 
@@ -701,214 +971,300 @@
             <img src="./assets/icons/rings.png" alt="" class="w-100">
         </div>
         <div class="plan-width" style="width: 100%; margin: 0 auto;">
-            <h2 style="font-size: 42px;" class="font-bold text-dark text-center">Our <span class="text-primary2">Plans</span></h2>
-            <p class="font-light text-xl text-dark text-center mb-4">LetsUpDoc is the most complete primary care service that offers you a long-term relationship virtually and affordably.</p>
+            <h2 style="font-size: 42px;" class="font-bold text-dark text-center">Our <span
+                    class="text-primary2">Plans</span></h2>
+            <p class="font-light text-xl text-dark text-center mb-4">LetsUpDoc is the most complete primary care service
+                that offers you a long-term relationship virtually and affordably.</p>
             <div class="w-100 d-flex justify-content-between" style="margin-top: 70px;">
                 <!-- Plan 01 -->
-                <div class="bg-white" style="width: 30%; border-radius: 10px; padding-bottom: 40px; box-shadow: 5px 5px 15px gray; overflow: hidden;">
-                    <div class="bg-dark d-flex justify-content-center align-items-center" style="padding: 5px 0; font-size: 35px;">
-                        <p class="font-regular text-light" style="margin: 0;">1500PKR<span class="font-light" style="font-size: 18px; margin-top: 10px;">/Month</span></p>
+                <div class="bg-white"
+                    style="width: 30%; border-radius: 10px; padding-bottom: 40px; box-shadow: 5px 5px 15px gray; overflow: hidden;">
+                    <div class="bg-dark d-flex justify-content-center align-items-center"
+                        style="padding: 5px 0; font-size: 35px;">
+                        <p class="font-regular text-light" style="margin: 0;">1500PKR<span class="font-light"
+                                style="font-size: 18px; margin-top: 10px;">/Month</span></p>
                     </div>
                     <div class="text-dark text-center" style="margin: 20px 0 40px 0;">
                         <h4 class="font-regular" style="font-size: 32px;">Basic</h4>
                         <p class="text-xs" style="opacity: 0.7; margin: 0;">For solopreneurs</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                        
+
                         <svg width="9" height="75" viewBox="0 0 9 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.51379 7.76967V67.1009C8.51379 71.3175 5.09381 74.7375 0.873047 74.7375V0.128906C2.98343 0.128906 4.89639 0.983902 6.27832 2.36441C7.65878 3.7505 8.51379 5.65929 8.51379 7.76967Z" fill="#105742"/>
+                            <path
+                                d="M8.51379 7.76967V67.1009C8.51379 71.3175 5.09381 74.7375 0.873047 74.7375V0.128906C2.98343 0.128906 4.89639 0.983902 6.27832 2.36441C7.65878 3.7505 8.51379 5.65929 8.51379 7.76967Z"
+                                fill="#105742" />
                         </svg>
 
                         <div class="font-light text-dark" style="width: fit-content;">
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 1</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 2</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 3</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 4</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 5</span>
                             </div>
                             <div class="d-flex align-items-center">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 6</span>
                             </div>
                         </div>
 
-                        <svg width="9" height="75" style="margin: auto 0;" viewBox="0 0 9 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.24869 0.128906V74.7375C4.02792 74.7375 0.60791 71.3175 0.60791 67.1009V7.76967C0.60791 3.54889 4.02792 0.128906 8.24869 0.128906Z" fill="#105742"/>
+                        <svg width="9" height="75" style="margin: auto 0;" viewBox="0 0 9 75" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.24869 0.128906V74.7375C4.02792 74.7375 0.60791 71.3175 0.60791 67.1009V7.76967C0.60791 3.54889 4.02792 0.128906 8.24869 0.128906Z"
+                                fill="#105742" />
                         </svg>
-                            
+
                     </div>
-                    <div class="d-flex justify-content-center align-items-center" style="width: 80%; margin: 40px auto 0 auto;">
-                        <a class="text-dark cursor-pointer w-100 text-center text-xl font-regular" style="padding: 10px 0; border-radius: 7px; width: 100%; border: 2px #424B5A solid;">Upgrade</a>
+                    <div class="d-flex justify-content-center align-items-center"
+                        style="width: 80%; margin: 40px auto 0 auto;">
+                        <a class="text-dark cursor-pointer w-100 text-center text-xl font-regular"
+                            style="padding: 10px 0; border-radius: 7px; width: 100%; border: 2px #424B5A solid;">Upgrade</a>
                     </div>
                 </div>
                 <!-- Plan 02 -->
-                <div class="bg-white" style="width: 30%; border-radius: 10px; padding-bottom: 40px; box-shadow: 5px 5px 15px gray; overflow: hidden;">
-                    <div class="bg-primary2 d-flex justify-content-center align-items-center" style="padding: 5px 0; font-size: 35px;">
-                        <p class="font-regular text-light" style="margin: 0;">1500PKR<span class="font-light" style="font-size: 18px; margin-top: 10px;">/Month</span></p>
+                <div class="bg-white"
+                    style="width: 30%; border-radius: 10px; padding-bottom: 40px; box-shadow: 5px 5px 15px gray; overflow: hidden;">
+                    <div class="bg-primary2 d-flex justify-content-center align-items-center"
+                        style="padding: 5px 0; font-size: 35px;">
+                        <p class="font-regular text-light" style="margin: 0;">1500PKR<span class="font-light"
+                                style="font-size: 18px; margin-top: 10px;">/Month</span></p>
                     </div>
                     <div class="text-primary2 text-center" style="margin: 20px 0 40px 0;">
                         <h4 class="font-regular" style="font-size: 32px;">Student</h4>
                         <p class="text-xs" style="opacity: 0.7; margin: 0;">For students</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                        
+
                         <svg width="9" height="75" viewBox="0 0 9 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.51379 7.76967V67.1009C8.51379 71.3175 5.09381 74.7375 0.873047 74.7375V0.128906C2.98343 0.128906 4.89639 0.983902 6.27832 2.36441C7.65878 3.7505 8.51379 5.65929 8.51379 7.76967Z" fill="#358C79"/>
+                            <path
+                                d="M8.51379 7.76967V67.1009C8.51379 71.3175 5.09381 74.7375 0.873047 74.7375V0.128906C2.98343 0.128906 4.89639 0.983902 6.27832 2.36441C7.65878 3.7505 8.51379 5.65929 8.51379 7.76967Z"
+                                fill="#358C79" />
                         </svg>
 
                         <div class="font-light text-primary2" style="width: fit-content;">
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 1</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 2</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 3</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 4</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 5</span>
                             </div>
                             <div class="d-flex align-items-center">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 6</span>
                             </div>
                         </div>
 
-                        <svg width="9" height="75" style="margin: auto 0;" viewBox="0 0 9 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.24869 0.128906V74.7375C4.02792 74.7375 0.60791 71.3175 0.60791 67.1009V7.76967C0.60791 3.54889 4.02792 0.128906 8.24869 0.128906Z" fill="#358C79"/>
+                        <svg width="9" height="75" style="margin: auto 0;" viewBox="0 0 9 75" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.24869 0.128906V74.7375C4.02792 74.7375 0.60791 71.3175 0.60791 67.1009V7.76967C0.60791 3.54889 4.02792 0.128906 8.24869 0.128906Z"
+                                fill="#358C79" />
                         </svg>
-                            
+
                     </div>
-                    <div class="d-flex justify-content-center align-items-center" style="width: 80%; margin: 40px auto 0 auto;">
-                        <a class="text-light bg-primary2 cursor-pointer w-100 text-center text-xl font-regular" style="padding: 10px 0; border-radius: 7px; width: 100%;">Upgrade</a>
+                    <div class="d-flex justify-content-center align-items-center"
+                        style="width: 80%; margin: 40px auto 0 auto;">
+                        <a class="text-light bg-primary2 cursor-pointer w-100 text-center text-xl font-regular"
+                            style="padding: 10px 0; border-radius: 7px; width: 100%;">Upgrade</a>
                     </div>
                 </div>
                 <!-- Plan 03 -->
-                <div class="bg-white" style="width: 30%; border-radius: 10px; padding-bottom: 40px; box-shadow: 5px 5px 15px gray; overflow: hidden;">
-                    <div class="bg-dark d-flex justify-content-center align-items-center" style="padding: 5px 0; font-size: 35px;">
-                        <p class="font-regular text-light" style="margin: 0;">3500PKR<span class="font-light" style="font-size: 18px; margin-top: 10px;">/3Month</span></p>
+                <div class="bg-white"
+                    style="width: 30%; border-radius: 10px; padding-bottom: 40px; box-shadow: 5px 5px 15px gray; overflow: hidden;">
+                    <div class="bg-dark d-flex justify-content-center align-items-center"
+                        style="padding: 5px 0; font-size: 35px;">
+                        <p class="font-regular text-light" style="margin: 0;">3500PKR<span class="font-light"
+                                style="font-size: 18px; margin-top: 10px;">/3Month</span></p>
                     </div>
                     <div class="text-dark text-center" style="margin: 20px 0 40px 0;">
                         <h4 class="font-regular" style="font-size: 32px;">Basic</h4>
                         <p class="text-xs" style="opacity: 0.7; margin: 0;">For solopreneurs</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                        
+
                         <svg width="9" height="75" viewBox="0 0 9 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.51379 7.76967V67.1009C8.51379 71.3175 5.09381 74.7375 0.873047 74.7375V0.128906C2.98343 0.128906 4.89639 0.983902 6.27832 2.36441C7.65878 3.7505 8.51379 5.65929 8.51379 7.76967Z" fill="#105742"/>
+                            <path
+                                d="M8.51379 7.76967V67.1009C8.51379 71.3175 5.09381 74.7375 0.873047 74.7375V0.128906C2.98343 0.128906 4.89639 0.983902 6.27832 2.36441C7.65878 3.7505 8.51379 5.65929 8.51379 7.76967Z"
+                                fill="#105742" />
                         </svg>
 
                         <div class="font-light text-dark" style="width: fit-content;">
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 1</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 2</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 3</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 4</span>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 5</span>
                             </div>
                             <div class="d-flex align-items-center">
-                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z" fill="#424B5A"/>
-                                    </svg>
-                                    
+                                <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.95326 7.89661L2.49037 4.43372C2.09934 4.04261 1.46604 4.04163 1.07374 4.43177L1.07285 4.43226C0.68046 4.82142 0.679361 5.45276 1.07035 5.84388L5.95326 10.7267L14.8767 1.70472C15.2644 1.31311 15.2628 0.68079 14.8728 0.291142C14.483 -0.0985066 13.8546 -0.0970418 13.467 0.295536L5.95326 7.89661Z"
+                                        fill="#424B5A" />
+                                </svg>
+
                                 <span class="ml-4">Service 6</span>
                             </div>
                         </div>
 
-                        <svg width="9" height="75" style="margin: auto 0;" viewBox="0 0 9 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.24869 0.128906V74.7375C4.02792 74.7375 0.60791 71.3175 0.60791 67.1009V7.76967C0.60791 3.54889 4.02792 0.128906 8.24869 0.128906Z" fill="#105742"/>
+                        <svg width="9" height="75" style="margin: auto 0;" viewBox="0 0 9 75" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.24869 0.128906V74.7375C4.02792 74.7375 0.60791 71.3175 0.60791 67.1009V7.76967C0.60791 3.54889 4.02792 0.128906 8.24869 0.128906Z"
+                                fill="#105742" />
                         </svg>
-                            
+
                     </div>
-                    <div class="d-flex justify-content-center align-items-center" style="width: 80%; margin: 40px auto 0 auto;">
-                        <a class="text-dark cursor-pointer w-100 text-center text-xl font-regular" style="padding: 10px 0; border-radius: 7px; width: 100%; border: 2px #424B5A solid;">Upgrade</a>
+                    <div class="d-flex justify-content-center align-items-center"
+                        style="width: 80%; margin: 40px auto 0 auto;">
+                        <a class="text-dark cursor-pointer w-100 text-center text-xl font-regular"
+                            style="padding: 10px 0; border-radius: 7px; width: 100%; border: 2px #424B5A solid;">Upgrade</a>
                     </div>
                 </div>
             </div>
@@ -1073,7 +1429,7 @@
     </section>
 
     <!-- DOC LISTS SECTION -->
-    <section class="w-100 " style="padding: 140px;">
+    <section class="w-100" style="padding: 140px;">
         <div class="d-flex justify-content-between flex-wrap">
             <!-- Karachi -->
             <div class="doc-list font-light d-flex flex-column" style="width: 90%;">
@@ -1199,7 +1555,8 @@
     </section>
 
     <!-- CITIES LIST SECTION -->
-    <section class="footer-last w-100 bg-primary2 font-medium text-light d-flex align-items-center justify-content-between">
+    <section
+        class="footer-last w-100 bg-primary2 font-medium text-light d-flex align-items-center justify-content-between">
         <span class="mr-2">Major Cities</span>
         <span>Karachi</span>
         <span>Lahore</span>
@@ -1241,7 +1598,8 @@
     </section>
 
     <!-- LAST FOOTER SECTION -->
-    <footer class="footer-last w-100 bg-dark font-medium text-light d-lg-flex align-items-center justify-content-between">
+    <footer
+        class="footer-last w-100 bg-dark font-medium text-light d-lg-flex align-items-center justify-content-between">
         <p class="text-center lg-text-left">© 2024 LetsUpDoc All Rights Reserved</p>
         <div class="d-flex align-items-center justify-content-between px-5 px-lg-0">
             <span>Follow Us on</span>
@@ -1280,10 +1638,10 @@
     </footer>
 
     <!-- BOT -->
-     <a class="position-fixed cursor-pointer d-none d-lg-block" style="top: 80vh; left: 2%; z-index: 5; width: 100px;">
+    <a class="position-fixed cursor-pointer d-none d-lg-block" style="top: 80vh; left: 2%; z-index: 5; width: 100px;">
         <img src="./assets/icons/bot.png" alt="" class="w-100">
-     </a>
-    
+    </a>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

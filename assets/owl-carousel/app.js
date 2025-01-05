@@ -11,6 +11,9 @@ $(document).ready(function () {
             600: {
                 items: 2
             },
+            768:{
+                items: 4
+            },
             1000: {
                 items: 6
             }
@@ -30,9 +33,8 @@ $(document).ready(function () {
 $(document).ready(function () {
     var owl = $('.owl-consult');
     owl.owlCarousel({
-        margin: 10,
         loop: true,
-        items: 1,
+        // items: 1,
         responsive: {
             0: {
                 items: 1
@@ -52,6 +54,25 @@ $(document).ready(function () {
 
     $('.am-next-consult').click(function() {
         owl.trigger('next.owl.carousel');
+    });
+});
+
+$(document).ready(function () {
+    var owl = $('.owl-consult2');
+    owl.owlCarousel({
+        margin: 10,
+        loop: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
     });
 });
 

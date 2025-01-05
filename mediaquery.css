@@ -1,99 +1,162 @@
 @media (min-width: 1024px) {
-    .header-main{
+    .lg-text-xs {
+        font-size: 12px !important;
+    }
+
+    .lg-text-sm {
+        font-size: 14px !important;
+    }
+
+    .lg-text-lg {
+        font-size: 18px !important;
+    }
+
+    .lg-text-xl {
+        font-size: 22px !important;
+    }
+
+    .lg-text-2xl {
+        font-size: 24px !important;
+    }
+
+    .header-main {
         padding: 15px 30px !important;
         font-size: 12px;
         font-size: 12px !important;
     }
-    .im-doc{
+
+    .im-doc {
         display: none !important;
     }
-    .header-img{
+
+    .header-img {
         width: 7rem;
     }
-    .hero-heading{
+
+    .hero-heading {
         font-size: 42px;
     }
-    .hero-desc{
+
+    .hero-desc {
         margin: 15px 0;
     }
-    .lg-none{
+
+    .lg-none {
         display: none !important;
     }
-    
-    .footer-last{
+
+    /* SEARCH SECTION */
+    .search-sec>p {
+        font-size: 22px !important;
+    }
+
+    .search-sec>h2 {
+        font-size: 42px !important;
+    }
+
+    /* CONSULT */
+    .consult-content {
+        width: 40%;
+    }
+
+    .consult-content {
+        width: 55%;
+    }
+
+    .footer-last {
         padding: 15px 100px !important;
         font-size: 16px !important;
     }
-    .are-main{
+
+    .are-main {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .are1{
+
+    .are1 {
         width: 50% !important;
     }
-    .are2{
+
+    .are2 {
         width: 47% !important;
     }
-    .doc-list{
+
+    .doc-list {
         width: 30% !important;
     }
-    .info-list{
+
+    .info-list {
         width: 30%;
     }
-    .footer-list{
+
+    .footer-list {
         width: 20% !important;
     }
 }
+
 @media (min-width: 1280px) {
-    .header-main{
+    .header-main {
         padding: 15px 80px !important;
         font-size: 14px !important;
         font-size: 12px !important;
     }
-    .im-doc{
+
+    .im-doc {
         display: flex !important;
     }
-    .header-img{
+
+    .header-img {
         width: 8rem;
     }
-    .hero-heading{
+
+    .hero-heading {
         font-size: 52px;
     }
-    .hero-desc{
+
+    .hero-desc {
         margin: 35px 0;
     }
-    .take-consult{
+
+    .take-consult {
         width: 40% !important;
     }
+
     .plan-width {
         width: 70% !important;
     }
-    .footer-last{
+
+    .footer-last {
         padding: 15px 100px !important;
         font-size: 18px !important;
     }
 }
+
 @media (min-width: 1536px) {
-    .header-main{
+    .header-main {
         padding: 15px 150px !important;
         font-size: 16px !important;
         font-size: 14px !important;
     }
-    .header-img{
+
+    .header-img {
         width: 10rem !important;
     }
-    .take-postion{
+
+    .take-postion {
         top: -110% !important;
     }
-    .take-globe{
+
+    .take-globe {
         top: 30% !important;
         left: 15% !important;
     }
-    .how-width{
+
+    .how-width {
         width: 40% !important;
     }
-    .footer-last{
+
+    .footer-last {
         padding: 15px 150px !important;
         font-size: 20px !important;
     }
