@@ -207,6 +207,14 @@
     width: 100%;
 }
 
+/* HIW */
+.hiw-margin{
+    margin: 0, 5px 0 5px;
+}
+.hiw-width{
+    width: 100%;
+}
+
 /* FOOTER LAST */
 .footer-last{
     padding: 10px 0;

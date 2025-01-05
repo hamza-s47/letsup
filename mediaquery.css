@@ -63,6 +63,13 @@
         width: 55%;
     }
 
+    .hiw-margin-lg{
+        margin: 0, 20px 0 20px !important;
+    }
+    .hiw-width-lg{
+        width: 60% !important;
+    }
+
     .footer-last {
         padding: 15px 100px !important;
         font-size: 16px !important;
