@@ -138,22 +138,46 @@ function heroAnimaion(condition){
     }
 }
 
-$(function() {
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 5
-        }
-      }
-    });
-  });
+// $(function() {
+//     $(".owl-carousel").owlCarousel({
+//       loop: true,
+//       margin: 10,
+//       nav: true,
+//       responsive: {
+//         0: {
+//           items: 1
+//         },
+//         600: {
+//           items: 3
+//         },
+//         1000: {
+//           items: 5
+//         }
+//       }
+//     });
+//   });
+
+function classToggle(classToggle, el){
+    var element = document.getElementById(el);
+    element.classList.toggle(classToggle);
+}
+
+function menuShow(){
+    let open = document.getElementById('mob-menu-btn');
+    let close = document.getElementById('mob-menu-close');
+    let mobHeader = document.getElementById('mob-h-detail');
+
+    classToggle('d-none', 'mob-h-detail');
+
+    if(mobHeader.classList.contains('d-none')){
+        close.classList.add('d-none');
+        open.classList.remove('d-none');
+
+    } else {
+        close.classList.remove('d-none');
+        open.classList.add('d-none');
+    }
+
+    
+}
   
