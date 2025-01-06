@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <!-- NAVBAR -->
     <nav class="header-main header-gradient font-regular d-none d-lg-block">
         <div class="d-flex align-items-center justify-content-between w-100">
@@ -103,13 +104,118 @@
 
             <div class="d-flex align-items-center font-medium">
 
-                <div class="d-flex align-items-center justify-content-center mr-4 cursor-pointer">
+                <div class="position-relative d-flex align-items-center justify-content-center mr-4 cursor-pointer"
+                    onmouseover="document.getElementById('h-drop').style.display = 'block';"
+                    onmouseleave="document.getElementById('h-drop').style.display = 'none';">
                     <a>Consult a Doctor</a>
-                    <div class="ml-2" style="width: 8px; ">
+                    <div class="ml-2" style="width: 8px;">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor">
                             <path
                                 d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
                         </svg>
+                    </div>
+                    <!-- Header Drop Down -->
+                    <div id="h-drop" class="bg-danger position-absolute"
+                        style="top: 1rem; left: 0; display: none; z-index: 99; width: 45vw; border-radius: 8px; overflow: hidden;">
+                        <div class="d-flex">
+                            <div class="w-75 bg-white text-primary2">
+                                <div class="w-100 p-4" style="border-bottom: 2px solid #E8FBF5;">
+                                    <h2 class="text-uppercase font-bold text-base mb-4">Global Payments</h2>
+                                    <div class="d-flex justify-content-between">
+                                        <div style="width: fit-content;">
+                                            <h3 class="text-base">Payments</h3>
+                                            <a class="d-block text-primary2" style="opacity: 0.7;">Online payments</a>
+                                        </div>
+                                        <div style="width: fit-content;">
+                                            <div style="width: fit-content;">
+                                                <h3 class="text-base">Terminal</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">In-person payments</a>
+                                            </div>
+                                            <div class="my-3" style="width: fit-content;">
+                                                <h3 class="text-base">Radar</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Fraud prevention</a>
+                                            </div>
+                                            <div style="width: fit-content;">
+                                                <h3 class="text-base">Authorization</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Acceptance optimization</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Payment 2 -->
+                                <div class="w-100 p-4" style="border-bottom: 2px solid #E8FBF5;">
+                                    <h2 class="text-uppercase font-bold text-base mb-4">Embedded payments and Finance</h2>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <div style="width: fit-content;">
+                                                <h3 class="text-base">Connect</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Payments for platforms</a>
+                                            </div>
+                                            <div class="mt-3" style="width: fit-content;">
+                                                <h3 class="text-base">Treasury</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Financial accounts</a>
+                                            </div>
+                                        </div>
+                                        <div style="width: fit-content;">
+                                            <div style="width: fit-content;">
+                                                <h3 class="text-base">Capital</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Customer financing</a>
+                                            </div>
+                                            <div class="mt-3" style="width: fit-content;">
+                                                <h3 class="text-base">Issuing</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Physical and virtual cards</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Payment 3 -->
+                                <div class="w-100 p-4" style="border-bottom: 2px solid #E8FBF5;">
+                                    <h2 class="text-uppercase font-bold text-base mb-4">Revenue and Finance Automation</h2>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <div style="width: fit-content;">
+                                                <h3 class="text-base">Billing</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Subscriptions and usage-based</a>
+                                            </div>
+                                            <div class="mt-3" style="width: fit-content;">
+                                                <h3 class="text-base">Revenue Recognition</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Accounting automation</a>
+                                            </div>
+                                            <div class="mt-3" style="width: fit-content;">
+                                                <h3 class="text-base">Tax</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Sales tax & VAT automation</a>
+                                            </div>
+                                        </div>
+                                        <div style="width: fit-content;">
+                                            <div style="width: fit-content;">
+                                                <h3 class="text-base">Invoicing</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Online invoices</a>
+                                            </div>
+                                            <div class="mt-3" style="width: fit-content;">
+                                                <h3 class="text-base">Sigma</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Custom reports</a>
+                                            </div>
+                                            <div class="mt-3" style="width: fit-content;">
+                                                <h3 class="text-base">Data Pipeline</h3>
+                                                <a class="d-block text-primary2" style="opacity: 0.7;">Data sync</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-25 bg-light py-4 px-4 font-medium text-base">
+                                <p class="mb-4 font-bold text-primary2">MORE</p>
+                                <div class="d-flex flex-column">
+                                    <a class="mb-2 text-primary2">Payment Methods</a>
+                                    <a class="mb-2 text-primary2">Links</a>
+                                    <a class="mb-2 text-primary2">Financial Connections</a>
+                                    <a class="mb-2 text-primary2">Identity</a>
+                                    <a class="text-primary2">Atlas</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1301,7 +1407,7 @@
                 <a class="cursor-pointer bg-sec text-light font-medium text-sm lg-text-xl"
                     style="padding: 8px 35px; border-radius: 5px; text-decoration: none !important;">JOIN FOR FREE</a>
             </div>
-    
+
             <div class="are2 mt-5 mt-lg-0" style="width: 100%;">
                 <div class="font-light text-base lg-text-xl" style="width: fit-content; margin: 0 0 0 auto;">
                     <p style="margin-left: 40px;">Why LetsUpDoc?</p>
@@ -1345,9 +1451,9 @@
                         </div>
                         <span>Publish medical articles for 1M+ LetsUpDoc users</span>
                     </div>
-    
+
                 </div>
-    
+
             </div>
         </div>
     </section>
@@ -1364,7 +1470,8 @@
 
     <!-- CONTACT US SECTION -->
     <section class="w-100 bg-dark text-light d-flex align-items-center justify-content-center" style="padding: 40px 0;">
-        <div class="search-sec d-flex flex-column align-items-center justify-content-center" style="width: 90%; margin: 0 auto;">
+        <div class="search-sec d-flex flex-column align-items-center justify-content-center"
+            style="width: 90%; margin: 0 auto;">
             <h2 class="text-center font-medium mb-4">Contact us</h2>
             <p class="font-medium text-center">We'd love to hear from you</p>
             <p class="font-light text-base text-center mb-4">For more inquiries and information, ring us a call or
@@ -1390,7 +1497,8 @@
                     style="padding: 12px 50px; text-decoration: none !important;">SUBMIT</a>
             </div>
             <!-- EmailIL and Phone -->
-            <section class="d-lg-flex align-items-center justify-content-center justify-content-lg-start" style="margin: 30px 0;">
+            <section class="d-lg-flex align-items-center justify-content-center justify-content-lg-start"
+                style="margin: 30px 0;">
                 <div class="d-flex align-items-center mr-lg-4 text-lightgreen">
                     <svg width="22" height="22" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -1400,7 +1508,8 @@
 
                     <span class="ml-2 text-light font-light text-base">business@letsupdoc.com</span>
                 </div>
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-start text-lightgreen mt-2 mt-lg-0">
+                <div
+                    class="d-flex align-items-center justify-content-center justify-content-lg-start text-lightgreen mt-2 mt-lg-0">
                     <svg width="22" height="22" viewBox="0 0 13 12" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -1513,7 +1622,8 @@
         <div class="d-flex justify-content-between flex-wrap" style="width: 80%; margin: 0 auto;">
             <div class="footer-list" style="width: 90%;">
                 <img src=" ./assets/icons/logo.png" alt="" style="width: 50%;" class="">
-                <p class="text-light font-regular mt-4 text-justify" style="line-height: 2rem;">LetsUpDoc is the product of Hassbuna
+                <p class="text-light font-regular mt-4 text-justify" style="line-height: 2rem;">LetsUpDoc is the product
+                    of Hassbuna
                     company. Hassbuna has a plan of publishing a very niche products in the market with the Only reason
                     of helping and make the life of people easy and simple in the future inshALLAH. The Aim of LetsUpDoc
                     is to enable patients and doctors to meet and connect each other in a very effective and swift way.
@@ -1593,7 +1703,7 @@
             <p class="mr-3">Faisalabad</p>
             <p class="mr-3">Rawalpindi</p>
         </div>
-        <div class="d-flex align-items-center d-lg-none" style="width: fit-content; margin: 0 auto;" >
+        <div class="d-flex align-items-center d-lg-none" style="width: fit-content; margin: 0 auto;">
             <p class="mr-3">Gujranwala</p>
             <p class="mr-3">Peshawar</p>
             <p class="mr-3">Multan</p>
