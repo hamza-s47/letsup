@@ -107,3 +107,25 @@ $(document).ready(function () {
         owl3.trigger('next.owl.carousel');
     });
 });
+
+$(document).ready(function () {
+    var owl = $('.owl-plan');
+    owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 40
+            },
+            768: {
+                items: 1,
+                stagePadding: 50
+            },
+            1000: {
+                items: 3,
+                loop: false,
+            }
+        }
+    });
+});

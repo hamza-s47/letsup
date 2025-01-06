@@ -46,12 +46,16 @@
     }
 
     /* SEARCH SECTION */
-    .search-sec>p {
+    .search-sec > p {
         font-size: 22px !important;
     }
 
-    .search-sec>h2 {
+    .search-sec h2 {
         font-size: 42px !important;
+    }
+
+    .download-width{
+        width: 30%;
     }
 
     /* CONSULT */
@@ -63,11 +67,22 @@
         width: 55%;
     }
 
-    .hiw-margin-lg{
+    /* PATIENT */
+    .patient-width {
+        width: 75% !important;
+    }
+
+    .hiw-margin-lg {
         margin: 0, 20px 0 20px !important;
     }
-    .hiw-width-lg{
+
+    .hiw-width-lg {
         width: 60% !important;
+    }
+
+    .take-consult {
+        width: 40% !important;
+        margin: 0 0 0 6rem;
     }
 
     .footer-last {
@@ -127,6 +142,7 @@
 
     .take-consult {
         width: 40% !important;
+        margin: 0 0 0 10rem;
     }
 
     .plan-width {

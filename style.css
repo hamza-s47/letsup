@@ -190,7 +190,7 @@
 }
 
 /* SEARCH SECTION */
-.search-sec > h2{
+.search-sec h2{
     font-size: 28px;
 }
 
@@ -213,6 +213,21 @@
 }
 .hiw-width{
     width: 100%;
+}
+
+/* PATIENT */
+.patient-width {
+    width: 100%;
+}
+
+.take-consult{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.download-width{
+    width: 60%;
 }
 
 /* FOOTER LAST */
