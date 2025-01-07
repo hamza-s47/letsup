@@ -1,131 +1,87 @@
 $(document).ready(function () {
-    var owl = $('.owl-search');
-    owl.owlCarousel({
+
+    // Initialize owl-search carousel
+    var owlSearch = $('.owl-search');
+    owlSearch.owlCarousel({
         margin: 10,
         loop: true,
-
         responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            768:{
-                items: 4
-            },
-            1000: {
-                items: 6
-            }
+            0: { items: 1 },
+            600: { items: 2 },
+            768: { items: 4 },
+            1000: { items: 6 }
         }
     });
 
     $('.am-prev-search').click(function() {
-        owl.trigger('prev.owl.carousel');
+        owlSearch.trigger('prev.owl.carousel');
     });
 
-    // Custom "Next" button
     $('.am-next-search').click(function() {
-        owl.trigger('next.owl.carousel');
+        owlSearch.trigger('next.owl.carousel');
     });
-});
 
-$(document).ready(function () {
-    var owl = $('.owl-consult');
-    owl.owlCarousel({
+    // Initialize owl-consult carousel
+    var owlConsult = $('.owl-consult');
+    owlConsult.owlCarousel({
         loop: true,
-        // items: 1,
         responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 }
         }
     });
 
     $('.am-prev-consult').click(function() {
-        owl.trigger('prev.owl.carousel');
+        owlConsult.trigger('prev.owl.carousel');
     });
 
     $('.am-next-consult').click(function() {
-        owl.trigger('next.owl.carousel');
+        owlConsult.trigger('next.owl.carousel');
     });
-});
 
-$(document).ready(function () {
-    var owl = $('.owl-consult2');
-    owl.owlCarousel({
+    // Initialize owl-consult2 carousel
+    var owlConsult2 = $('.owl-consult2');
+    owlConsult2.owlCarousel({
         margin: 10,
         loop: false,
         responsive: {
-            0: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1000: {
-                items: 6
-            }
+            0: { items: 2 },
+            768: { items: 3 },
+            1000: { items: 6 }
         }
     });
-});
 
-$(document).ready(function () {
-    var owl3 = $('.owl-patients');
-    
-    owl3.owlCarousel({
+    // Initialize owl-patients carousel
+    var owlPatients = $('.owl-patients');
+    owlPatients.owlCarousel({
         margin: 10,
         loop: true,
-        items: 1,
         responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 }
         }
     });
 
-    
     $('.am-prev-patients').click(function() {
-        owl3.trigger('prev.owl.carousel');
-        
+        owlPatients.trigger('prev.owl.carousel');
     });
 
-    
     $('.am-next-patients').click(function() {
-        owl3.trigger('next.owl.carousel');
+        owlPatients.trigger('next.owl.carousel');
     });
-});
 
-$(document).ready(function () {
-    var owl = $('.owl-plan');
-    owl.owlCarousel({
+    // Initialize owl-plan carousel
+    var owlPlan = $('.owl-plan');
+    owlPlan.owlCarousel({
         margin: 10,
         loop: true,
         responsive: {
-            0: {
-                items: 1,
-                stagePadding: 40
-            },
-            768: {
-                items: 1,
-                stagePadding: 50
-            },
-            1000: {
-                items: 3,
-                loop: false,
-            }
+            0: { items: 1, stagePadding: 40 },
+            768: { items: 1, stagePadding: 50 },
+            1000: { items: 3, loop: false }
         }
     });
+
 });
