@@ -325,20 +325,26 @@ function workToggle(condition) {
     videoDetail.classList.add(classNameDetail);
     queryDetail.classList.add(classNameDetail);
     chatDetail.classList.remove('d-flex');
+    phoneDetail.classList.remove('d-flex');
+    videoDetail.classList.remove('d-flex');
+    queryDetail.classList.remove('d-flex');
 
     // Add class to the selected element
     if (condition === 'phone') {
         phone.classList.add(className);
         phoneDetail.classList.remove(classNameDetail);
+        phoneDetail.classList.add('d-flex');
     } else if (condition === 'video') {
         video.classList.add(className);
         videoDetail.classList.remove(classNameDetail);
+        videoDetail.classList.add('d-flex');
     } else if (condition === 'query') {
         query.classList.add(className);
         queryDetail.classList.remove(classNameDetail);
+        queryDetail.classList.add('d-flex');
     } else {
         chat.classList.add(className);
         chatDetail.classList.remove(classNameDetail);
-        chatDetail.classList.add('d-flex')
+        chatDetail.classList.add('d-flex');
     }
 }
