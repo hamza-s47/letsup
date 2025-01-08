@@ -905,25 +905,30 @@
     </section>
 
     <!-- HOW IT WORKS SECTION -->
-    <section class="text-dark" style="width: 80%; margin: 0 auto 0 auto; padding: 20px 0 20px 0;">
+    <section class="text-dark" style="width: 90%; margin: 0 auto 0 auto; padding: 20px 0 20px 0;">
         <div class="w-100 search-sec">
             <h2 class="font-bold text-dark text-center">How It Works</h2>
             <p class="font-light text-dark text-center mb-4">Explore our user-friendly platform for hassle-free
                 online consultations</p>
-            <div class="d-flex" style="width: fit-content; margin: 10px auto 100px auto;">
-                <a class="font-light text-sm text-light bg-primary2"
-                    style="padding: 5px 25px; border-radius: 5px;">Chat</a>
+            <div class="d-lg-flex" style="width: fit-content; margin: 10px auto 100px auto;">
+                <div class="d-flex">
+                    <a id="w-chat" class="workToggle text-green font-light text-sm cursor-pointer" onclick="workToggle('chat')"
+                        style="padding: 5px 25px; border-radius: 5px; text-decoration: none;">Chat</a>
+                    <span class="hiw-margin hiw-margin-lg"></span>
+                    <a id="w-phone" class="font-light text-sm text-green cursor-pointer" onclick="workToggle('phone')"
+                        style=" padding: 5px 25px; border-radius: 5px; text-decoration: none;">Phone</a>
+                </div>
                 <span class="hiw-margin hiw-margin-lg"></span>
-                <a class="font-light text-sm text-green cursor-pointer"
-                    style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Phone</a>
-                <span class="hiw-margin hiw-margin-lg"></span>
-                <a class="font-light text-sm text-green cursor-pointer"
-                    style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Video</a>
-                <span class="hiw-margin hiw-margin-lg"></span>
-                <a class="font-light text-sm text-green cursor-pointer"
-                    style="opacity: 0.5; padding: 5px 25px; border-radius: 5px;">Query</a>
+                <div class="d-flex mt-3 mt-lg-0">
+                    <a id="w-video" class="font-light text-sm text-green cursor-pointer" onclick="workToggle('video')"
+                        style=" padding: 5px 25px; border-radius: 5px; text-decoration: none;">Video</a>
+                    <span class="hiw-margin hiw-margin-lg"></span>
+                    <a id="w-query" class="font-light text-sm text-green cursor-pointer" onclick="workToggle('query')"
+                        style=" padding: 5px 25px; border-radius: 5px; text-decoration: none;">Query</a>
+                </div>
             </div>
-            <div class="d-flex flex-column flex-lg-row justify-content-between">
+            <!-- Chat -->
+            <div id="wc-chat" class="d-flex flex-column flex-lg-row justify-content-between">
                 <div class="hiw-width hiw-width-lg">
                     <div class="d-flex how-width">
                         <!-- Progress -->
@@ -985,24 +990,27 @@
                         <img src="./assets/images/mobile.png" alt="" class="w-100 h-100" style="object-fit: contain;">
                     </div>
 
-                    <div class="font-light d-flex align-items-center position-relative" style="margin-top: 50px;">
+                    <div class="font-light d-flex flex-column flex-lg-row align-items-center" style="margin-top: 50px;">
                         <a class="font-light text-sm text-light bg-primary2"
                             style="padding: 5px 25px; border-radius: 5px;">Start Chat Consultation</a>
-                        <span style="margin: 0 20px;"></span>
-                        <a class="font-light text-sm text-dark" style="padding: 5px 15px; border-radius: 5px;">Still
-                            Confused? Watch Now</a>
-                        <span style="margin: 0 5px;"></span>
-                        <div class="cursor-pointer d-flex justify-content-center align-items-center"
-                            style="width: 18px; height: 18px; border: 1px #231F20 solid; border-radius: 50%;">
-                            <div id="confuse-radio" class="cursor-pointer d-none"
-                                style="width: 12px; height: 12px; background-color: #105742; border-radius: 50%;"></div>
-                        </div>
-                        <div style="margin-top: 35px;">
-                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 6.5L0.75 12.1292V0.870835L9 6.5Z" fill="#2DD36F" />
-                            </svg>
+                        <span class="d-none d-lg-block" style="margin: 0 20px;"></span>
+                        <div class="d-flex align-items-center">
+                            <a class="font-light text-sm text-dark" style="padding: 5px 15px; border-radius: 5px;">Still
+                                Confused? Watch Now</a>
+                            <span class="d-none d-lg-block" style="margin: 0 5px;"></span>
+                            <div class="cursor-pointer d-flex justify-content-center align-items-center"
+                                style="width: 18px; height: 18px; border: 1px #231F20 solid; border-radius: 50%;">
+                                <div id="confuse-radio" class="cursor-pointer d-none"
+                                    style="width: 12px; height: 12px; background-color: #105742; border-radius: 50%;">
+                                </div>
+                            </div>
+                            <div style="margin-top: 35px;">
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 6.5L0.75 12.1292V0.870835L9 6.5Z" fill="#2DD36F" />
+                                </svg>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1011,6 +1019,18 @@
                 <div class="d-none d-lg-flex justify-content-end" style="width: 35%; height: 600px;">
                     <img src="./assets/images/mobile.png" alt="" class="w-100 h-100" style="object-fit: contain;">
                 </div>
+            </div>
+            <!-- Phone -->
+            <div id="wc-phone" class="workToggleDetail bg-primary2 w-100" style="height: 30vh;">
+                <h3 class="font-bold text-light text-center">Phone content will go there!</h3>
+            </div>
+            <!-- Video -->
+            <div id="wc-video" class="workToggleDetail bg-dark w-100" style="height: 30vh;">
+                <h3 class="font-bold text-light text-center">Video content will go there!</h3>
+            </div>
+            <!-- Query -->
+            <div id="wc-query" class="workToggleDetail bg-dullgreen w-100" style="height: 30vh;">
+                <h3 class="font-bold text-light text-center">Query content will go there!</h3>
             </div>
         </div>
     </section>
@@ -1518,7 +1538,8 @@
                     </div>
                 </section>
                 <span class="mx-1 mx-lg-4"></span>
-                <a class="cursor-pointer bg-light text-seagreen font-light text-xs px-4 px-lg-5" style="padding: 12px 0; text-decoration: none !important;">SUBMIT</a>
+                <a class="cursor-pointer bg-light text-seagreen font-light text-xs px-4 px-lg-5"
+                    style="padding: 12px 0; text-decoration: none !important;">SUBMIT</a>
             </div>
             <!-- EmailIL and Phone -->
             <section class="d-lg-flex align-items-center justify-content-center justify-content-lg-start"

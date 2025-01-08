@@ -213,7 +213,7 @@
 
 /* HIW */
 .hiw-margin{
-    margin: 0, 5px 0 5px;
+    margin: 0, 0px;
 }
 .hiw-width{
     width: 100%;
@@ -228,6 +228,15 @@
     width: 80%;
     margin: 0 auto;
 
+}
+
+.workToggle{
+    background-color: var(--primary-color) !important;
+    color: #E8FBF5 !important;
+    cursor: default !important;
+}
+.workToggleDetail{
+    display: none !important;
 }
 
 .download-width{

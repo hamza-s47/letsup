@@ -297,4 +297,48 @@ function heroMobAnimaion(condition){
         bot.children[1].style.display = 'none';
     }
 }
+
+function classContain(class2, classCheck){
+    return class2.classList.contains(classCheck)
+}
   
+function workToggle(condition) {
+    const chat = document.getElementById('w-chat');
+    const phone = document.getElementById('w-phone');
+    const video = document.getElementById('w-video');
+    const query = document.getElementById('w-query');
+    const chatDetail = document.getElementById('wc-chat');
+    const phoneDetail = document.getElementById('wc-phone');
+    const videoDetail = document.getElementById('wc-video');
+    const queryDetail = document.getElementById('wc-query');
+    const className = 'workToggle';
+    const classNameDetail = 'workToggleDetail';
+
+    // Reset all buttons and details
+    chat.classList.remove(className);
+    phone.classList.remove(className);
+    video.classList.remove(className);
+    query.classList.remove(className);
+    
+    chatDetail.classList.add(classNameDetail);
+    phoneDetail.classList.add(classNameDetail);
+    videoDetail.classList.add(classNameDetail);
+    queryDetail.classList.add(classNameDetail);
+    chatDetail.classList.remove('d-flex');
+
+    // Add class to the selected element
+    if (condition === 'phone') {
+        phone.classList.add(className);
+        phoneDetail.classList.remove(classNameDetail);
+    } else if (condition === 'video') {
+        video.classList.add(className);
+        videoDetail.classList.remove(classNameDetail);
+    } else if (condition === 'query') {
+        query.classList.add(className);
+        queryDetail.classList.remove(classNameDetail);
+    } else {
+        chat.classList.add(className);
+        chatDetail.classList.remove(classNameDetail);
+        chatDetail.classList.add('d-flex')
+    }
+}
